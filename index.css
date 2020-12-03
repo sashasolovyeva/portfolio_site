@@ -94,6 +94,15 @@ img {
 	bottom: 2%;
 	right: 3%;
 	z-index: 10;
+	animation-name: backandforth;
+	animation-duration: 6s;
+	animation-iteration-count: 3;
+}
+
+#bikehamster {
+	animation-name: forward;
+	animation-duration: 6s;
+	animation-iteration-count: 3;
 }
 
 .smallfont {
@@ -126,4 +135,17 @@ img {
 
 .hide {
 	display: none;
+}
+
+/* ANIMATION */
+@keyframes backandforth {
+	0% {right: 3%;}
+	50% {right: 35%;}
+	100% {right: 3%;}
+}
+
+@keyframes forward {
+	0% {right: 2%; opacity: .3;}
+	50% {opacity: 1;}
+	100% {right: 40%; opacity: .3;}
 }
