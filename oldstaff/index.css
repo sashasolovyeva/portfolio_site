@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+:root {
+  --gradient: linear-gradient(90deg, hsla(211, 66%, 87%, 1) 0%, hsla(348, 67%, 88%, 1) 50%, hsla(272, 26%, 72%, 1) 100%);
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: proxima-nova,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+/*	display: -webkit-box;*/
+	margin: 0;
+	
+
+	/* -webkit-box-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+			align-items: center; */
+
+  background: hsla(350, 64%, 95%, 1);
+	background-size: 200%;
+	background-image: var(--gradient);
+	-webkit-animation: bg-animation 25s infinite;
+    animation: bg-animation 25s infinite;
+}
+
+.main {
+	display: flex;
+	height: 85vh;
+	justify-content: space-around;
+}
+
+.descr {
+	font-size: 28pt;
+	align-self: center;
+	padding: 2%;
+	margin-left: 5%;
+	flex: 50%;
+}
+
+.name {
+	font-size: 130pt;
+	font-weight: bold;
+	align-self: center;
+	padding: 2%;
+	margin-right: 5%;
+}
+
+nav {
+	display: flex;
+	font-size: 24pt;
+	justify-content: space-around;
+	font-weight: 600;
+}
+
+
+/*ANIMATION*/
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  25% {
+    background-position: right;
+  }
+  50% {
+    background-position: left;
+  }
+  75% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  25% {
+    background-position: right;
+  }
+  50% {
+    background-position: left;
+  }
+  75% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
