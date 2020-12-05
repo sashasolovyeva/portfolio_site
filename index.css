@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); */
 @import url("https://use.typekit.net/ron3wep.css");
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 * {
 	box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 	font-family: "Karla";
 	font-weight: 400;
 	font-style: normal;
-	font-size: 1.5vw;
+	font-size: 3vh;
 	margin: 0;
 }
 
@@ -22,22 +22,68 @@ body {
 	height: 100vh;
 }
 
-.heading {
-	font-size: 3.6vw;
-	font-family: "Karla";
-	/* font-family: century-old-style-std, serif; */
+a {
+	cursor: pointer;
+}
+
+.heading, .name {
+	font-size: 6vh;
 	font-weight: 400;
 }
 
 .name {
-	/* font-size: 4.5vw; */
 	color: magenta;
 }
 
-.descr {
-	max-width: 40vw;
-	font-size: 1.8vw;
-	line-height: 130%;
+.klepa {
+	position: absolute;
+	right: 3%;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	display: none;
+	max-width: 30%;
+}
+
+.name:hover ~ .klepa {
+	display: block;
+}
+
+.link {
+	position: absolute;
+	top: 4%;
+	right: 4%;
+	font-size: 4vh;
+}
+
+.activelink {
+	color: magenta;
+}
+
+.link:hover{
+	color:black;
+}
+
+.activelink:hover {
+	text-decoration: none;
+}
+
+#aboutlink {
+	top: 16%;
+}
+
+#homelink {
+	display: none;
+}
+
+.transcription {
+	display: block;
+	opacity: .5;
+}
+
+#descriptionofme {
+	margin-top: 2vh;
+	width: 70%;
 }
 
 section {
@@ -49,14 +95,14 @@ section {
 	width: 50%;
 	height: 50vh;
 	border: solid 2px;
-	padding: .5vw 2vw .8vw 2vw;
+	padding: 1vh 1vw;
 	overflow: hidden;
 	position: relative;
 }
 
 .container .project {
 	display: block;
-	padding: .2vw 0;
+	padding: .3vw 0;
 }
 
 section a {
@@ -66,55 +112,52 @@ section a {
 
 section a:hover {
 	color: magenta;
+	text-decoration: underline;
 }
 
-.projectlist {
-	padding: 1vw 2vw;
+.projectlist, .hiddenproject {
+	/* margin: 1vw 2vw; */
 	display: block;
+}
+
+.hiddenproject {
+	font-size: 4vh;
+}
+
+.descr {
+	max-width: 40vw;
+	font-size: 4vh;
+	line-height: 150%;
+	padding: 0;
+	margin: 0;
+}
+
+.project {
+	color: black;
+	text-decoration: none;
+}
+
+.project:hover {
+	color: magenta;
 }
 
 .antiqua {
 	font-family: century-old-style-std, serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 1.6vw;
+	font-size: 3vh;
 }
 
-img {
-	/* width: 102%;
-	height: 102%;
-	padding: 0; */
-	position: absolute;
-	right: 2%;
-	bottom: 2%;
-}
-
-#cursor {
-	position: absolute;
-	bottom: 2%;
-	right: 3%;
-	z-index: 10;
-	animation-name: backandforth;
-	animation-duration: 6s;
-	animation-iteration-count: 3;
-}
-
-#bikehamster {
-	animation-name: forward;
-	animation-duration: 6s;
-	animation-iteration-count: 3;
-}
-
-.smallfont {
+/* .smallfont {
 	font-size: 1.3vw;
-}
+} */
 
 .ps {
 	color: blue;
 }
 
 .p5 {
-	color: magenta;
+	color: #EE4266;
 }
 
 .dh {
@@ -133,8 +176,101 @@ img {
 	color: #9400D3;
 }
 
+.worktype_descr {
+	/* padding: 3vw 0; */
+}
+
+/* .hiddenproject {
+	margin-top: 10vh;
+} */
+
+img {
+	position: absolute;
+	right: 2%;
+	bottom: 2%;
+	margin: 0;
+	padding: 0;
+}
+
+#imagediv {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(transparent 11px, rgba(220,220,200,.8) 12px, transparent 12px), linear-gradient(90deg, transparent 11px, rgba(220,220,200,.8) 12px, transparent 12px);
+	background-size: 100% 20px, 20px 100%;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+}
+
 .hide {
 	display: none;
+}
+
+/* ANIMATED GRAPHIC PLACEMENT */
+
+#cursor {
+	position: absolute;
+	bottom: 2%;
+	right: 3%;
+	z-index: 10;
+	animation: backandforth 6s infinite;
+}
+
+#bikehamster {
+	animation: forward 4s infinite linear;
+}
+
+#stars {
+	bottom: 4%;
+	right: 6%;
+}
+
+.mashup_masters1 {
+	animation: chaoticmovement1 8s infinite linear;
+}
+
+.mashup_masters2 {
+	animation: chaoticmovement2 7s infinite linear;
+}
+
+.mashup_masters3 {
+	animation: chaoticmovement3 6s infinite linear reverse;
+}
+
+#piano {
+	right: 10%;
+}
+
+#star_piano1 {
+	bottom: 45%;
+	right: 28%;
+	animation: rotate 6s infinite linear;
+}
+#star_piano2 {
+	bottom: 60%;
+	right: 8%;
+	animation: rotate 5s infinite linear;
+}
+#star_piano3 {
+	bottom: 55%;
+	right: 50%;
+	animation: rotate 3s infinite linear;
+}
+
+.harlem {
+	height: 50vh;
+	width: auto;
+	/* right: 10%; */
+	right: 0;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#box {
+	animation: falling 2s linear infinite;
 }
 
 /* ANIMATION */
@@ -145,7 +281,39 @@ img {
 }
 
 @keyframes forward {
-	0% {right: 2%; opacity: .3;}
-	50% {opacity: 1;}
-	100% {right: 40%; opacity: .3;}
+	0% {right: -10%;}
+	100% {right: 100%;}
+}
+
+@keyframes rotate {
+	100% {transform: rotate(-360deg);}
+}
+
+@keyframes falling {
+	0% {bottom: 100%;}
+	100% {bottom: -40%;}
+}
+
+@keyframes chaoticmovement1 {
+	0% {right: -5%; bottom: 20%;}
+	25% {right: 25%; bottom: 70%;}
+	50% {right: 80%; bottom: 30%;}
+	75% {right: 50%; bottom: -10%;}
+	100% {right: 0%; bottom: 20%;}
+}
+
+@keyframes chaoticmovement2 {
+	0% {right: 90%; bottom: 60%;}
+	25% {right: 75%; bottom: -15%;}
+	50% {right: -5%; bottom: 20%;}
+	75% {right: 40%; bottom: 70%;}
+	100% {right: 90%; bottom: 60%;}
+}
+
+@keyframes chaoticmovement3 {
+	0% {right: 45%; bottom: -10%;}
+	25% {right: -5%; bottom: 45%;}
+	50% {right: 40%; bottom: 85%;}
+	75% {right: 85%; bottom: 50%;}
+	100% {right: 45%; bottom: -10%;}
 }

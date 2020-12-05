@@ -1,63 +1,42 @@
 @charset "UTF-8";
 /* CSS Document */
-
-* {
-	box-sizing: border-box;
-}
-
 body {
-	height: 100vh;
-	width: 100%;
-	font-family: proxima-nova,sans-serif;
-	font-weight: 400;
-	font-style: normal;
-	font-size: 2vw;
-	margin: 0;
+	background-color: #BCC4DB;
 }
 
-.name {
-	font-weight: bold;
-	font-size: 3.2vw;
-	margin-top: 3%;
-	margin-left: 3%;
+.heading {
+	color: white;
 }
 
-.text_container {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 5%;
+.activelink {
+	color: white;
 }
 
-.aboutme {
-	width: 60%;
-	padding: 2% 5%;
+.link:hover {
+	color: magenta;
 }
 
-.aboutme p {
-	line-height: 1.6;
+.activelink:hover {
+	color: white;
 }
 
-nav {
+
+.contactinfo {
 	position: absolute;
-	display: flex;
-	flex-direction: column;
+	bottom: 4%;
+	right: 4%;
+}
+
+.contactinfo a, .contactinfo span {
+	display: block;
 	text-align: right;
-	justify-content: center;
-	right: 0;
-	top: 0;
-	margin-right: 3%;
-	width: 15%;
-	height: 100vh;
-	align-item: flex-start;
+	font-size: 4vh;
 }
 
-nav a {
-	color: black;
-	font-weight: 500;
-	padding: 11.5% 0;
-	text-decoration: none;
+.contactinfo a {
+	color: white;
 }
 
-nav a:hover {
-	color: rgba(153, 113, 150);
+.klepa {
+	display: block;
 }
