@@ -33,6 +33,7 @@ a {
 
 .name {
 	color: magenta;
+	width: 30vw;
 }
 
 .klepa {
@@ -74,6 +75,11 @@ a {
 
 #homelink {
 	display: none;
+	font-size: 4vh;
+}
+
+#homelink:hover {
+	color: magenta;
 }
 
 .transcription {
@@ -127,7 +133,7 @@ section a:hover {
 .descr {
 	max-width: 40vw;
 	font-size: 4vh;
-	line-height: 150%;
+	line-height: 130%;
 	padding: 0;
 	margin: 0;
 }

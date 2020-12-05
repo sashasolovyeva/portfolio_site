@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sasha Solovyeva</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" media="only screen and (max-width: 1200px)" type="text/css" href="tablet.css">
+	<link rel="stylesheet" media="only screen and (max-width: 600px)" type="text/css" href="mobile.css">
 </head>
 
 <body>
@@ -12,8 +15,6 @@
 				<!-- 1 _________________________________________________________________________________________________________________________________________ -->
 				<div class="container">
 					<span class="name heading">sasha solovyeva</span>
-					<a class="link activelink" id="projectlink">&lt;projects/&gt;</a>
-					<a href="about" class="link" id="aboutlink">&lt;about/&gt;</a>
 					<a class="link" id="homelink">&lt;home/&gt;</a>
 					<!-- <span class="antiqua transcription">[sah-sha suh-la-v-yoh-vah]</span> -->
 					<p class="descr projectlist" id="descriptionofme">is a digital media maker who balances her career
@@ -21,10 +22,13 @@
 					with passions for journalism, math, and astrophysics.
 					</p>
 
+					<a class="link activelink" id="projectlink">&lt;projects/&gt;</a>
+					<a href="about" class="link" id="aboutlink">&lt;about/&gt;</a>
+
 					<img src="klepa2.png" class="klepa" alt="picture of sasha" width="300">
 
 					<div class="hiddenelement hide" data-id="dighum">
-						<p class="descr worktype_descr"> Interdiscipinary work in journalism, visual journalism, field research,
+						<p class="descr worktype_descr"> interdiscipinary work in journalism, visual journalism, field research,
 							academic research and creative writing that makes me uniquely qualified to bridge the gap
 							between technical, creative and academic.
 						</p>
@@ -58,8 +62,8 @@
 					<a class="heading" data-id="crcode"><span class="hide">&lt;</span> creative code <span>&gt;</span></a>
 					<div class="projectlist hide">
 						<a class="project" data-projectid="mashup1" href="#"><span class="antiqua">(1)</span> mash up like the masters</a>
-						<a class="project" data-projectid="bike"><span class="antiqua">(2)</span> bike through berlin</a>
-						<a class="project" data-projectid="sao"><span class="antiqua">(3)</span> southern russia observatory experience</a>
+						<a class="project" data-projectid="bike"><span class="antiqua">(2)</span> bike through Berlin</a>
+						<a class="project" data-projectid="sao"><span class="antiqua">(3)</span> southern Russia observatory experience</a>
 						<a class="project" data-projectid="piano"><span class="antiqua">(4)</span> sound of space</a>
 						<a class="project" data-projectid="hrdiagram"><span class="antiqua">(5)</span> a star's life</a>
 						<a class="project" data-projectid="rijks"><span class="antiqua">(6)</span> rijksmuseum artist inspirations</a>
@@ -68,7 +72,7 @@
 					</div>
 
 					<div class="hiddenelement hide" data-id="webdev">
-						<p class="descr worktype_descr">Websites, interactive experiences and design work
+						<p class="descr worktype_descr">websites, interactive experiences and design work
 							made for various intents and purposes of the mcc medialab, personal creative ambitions and journalistic fieldwork.
 						</p>
 					</div>
@@ -86,15 +90,15 @@
 					<a class="heading" data-id="webdev"><span class="hide">&lt;</span> design and web dev <span>&gt;</span></a>
 					<div class="projectlist hide">
 						<a class="project" data-projectid="mashup2"><span class="antiqua">(1)</span> mash up like the masters</a>
-						<a class="project" data-projectid="harlem"><span class="antiqua">(2)</span> (im)mobility in harlem</a>
+						<a class="project" data-projectid="harlem"><span class="antiqua">(2)</span> (im)mobility in Harlem</a>
 						<!-- <a class="project" data-projectid="dmtp"><span class="antiqua">(3)</span> a reimagined course website</a>
 						<a class="project" data-projectid="archive"><span class="antiqua">(4)</span> mcc medialab archive</a> -->
-						<a class="project" data-projectid="labsite"><span class="antiqua">(3)</span> mcc medialab website</a>
+						<a class="project" data-projectid="labsite"><span class="antiqua">(3)</span> MCC MediaLab website</a>
 
 					</div>
 
 					<div class="hiddenelement hide" data-id="crcode">
-						<p class="descr worktype_descr">Visual projects exploring ways of applying interactivity to popularize science,
+						<p class="descr worktype_descr">visual projects exploring ways of applying interactivity to popularize science,
 							create aesthetically compelling storytelling and inspiration tools.
 						</p>
 					</div>
@@ -109,9 +113,9 @@
 				<div class="container">
 					<a class="heading" data-id="dighum"><span class="hide">&lt;</span> digital humanities <span>&gt;</span></a>
 					<div class="projectlist hide">
-						<a class="project" data-projectid="harlem2"><span class="antiqua">(1)</span> (im)mobility in harlem</a>
-						<a class="project" data-projectid="strand"><span class="antiqua">(2)</span> strand-perception parabola</a>
-						<a class="project" data-projectid="rfe"><span class="antiqua">(3)</span> radio free europe: politics infographics</a>
+						<a class="project" data-projectid="harlem2"><span class="antiqua">(1)</span> (im)mobility in Harlem</a>
+						<a class="project" data-projectid="strand"><span class="antiqua">(2)</span> Strand-perception parabola</a>
+						<a class="project" data-projectid="rfe"><span class="antiqua">(3)</span> Radio Free Europe: politics infographics</a>
 
 					</div>
 
@@ -216,6 +220,27 @@
 						mainHiddenElems[i].classList.add('hide')
 				}
 			}
+
+			homeToHide.onclick = function(event){
+				homeToHide.style.display = 'none';
+				aboutToHide.style.display = 'block';
+				projectsToHide.style.display = 'block';
+				for(let i = 0; i < projectName.length; i++){
+					projectName[i].style.display = 'block';
+					if(i > 0){
+						projectLists[i].classList.add('hide')
+						projectName[i].children[0].classList.add('hide')
+						projectName[i].children[1].classList.remove('hide')
+					} else {
+						projectLists[i].classList.remove('hide')
+					}
+				}
+
+				for(let i = 0; i < mainHiddenElems.length; i++){
+						mainHiddenElems[i].classList.add('hide')
+				}
+			}
+
 			}
 		}
 
