@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body {
+  max-width: 100vw;
+  font-size: 2.2vh;
+}
+
+section {
+  /* flex-direction: column; */
+}
+
+.container {
+  padding: .5vh 1vh;
+}
+
+.heading, .name {
+  font-size: 4vh;
+}
+
+.link {
+  position: static;
+  font-size: 2.2vh;
+  margin: 1vh 0;
+  display: block;
+}
+
+.descr {
+  font-size: 2.2vh;
+  max-width: 46vw;
+}
+
+#descriptionofme {
+  width: 46vw;
+}
+
+.antiqua {
+  font-size: 2.2vh;
+}
+
+.hiddenproject {
+  font-size: 2.2vh;
+}
+
+.worktype_descr {
+  /* padding: 1vh 0; */
+}
+
+.klepa {
+  max-width: 45vw;
+}
+
+.contactinfo a, .contactinfo span {
+  font-size: 2.2vh;
+}
+
+#homelink {
+  font-size: 2.2vh;
+}

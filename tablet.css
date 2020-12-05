@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.link {
+  font-size: 2.8vh;
+  margin-top: 78px;
+}
+
+.descr {
+  font-size: 3vh;
+}
+
+#homelink {
+  margin: 0;
+  font-size: 6vh;
+  top: 40vh;
+  position:absolute;
+}
+
+.klepa {
+  max-width: 25vw;
+  /* change */
+}
