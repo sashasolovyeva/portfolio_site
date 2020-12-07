@@ -262,6 +262,7 @@ p, ul, li {
   }
 
   iframe {
+    width: 100vw;
     height: 30vh;
   }
 
