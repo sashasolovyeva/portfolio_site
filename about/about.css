@@ -12,12 +12,12 @@ body {
 	color: white;
 }
 
-.link:hover {
-	color: magenta;
-}
-
 .activelink:hover {
 	color: white;
+}
+
+.transcription {
+	color: black;
 }
 
 

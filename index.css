@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'); */
 @import url("https://use.typekit.net/ron3wep.css");
 @import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
@@ -29,6 +27,10 @@ a {
 .heading, .name {
 	font-size: 6vh;
 	font-weight: 400;
+}
+
+.heading:hover {
+	text-decoration: none;
 }
 
 .name {
@@ -75,7 +77,6 @@ a {
 
 #homelink {
 	display: none;
-	font-size: 4vh;
 }
 
 #homelink:hover {
@@ -109,6 +110,10 @@ section {
 .container .project {
 	display: block;
 	padding: .3vw 0;
+}
+
+.container .project:hover{
+	text-decoration: none;
 }
 
 section a {
@@ -152,11 +157,8 @@ section a:hover {
 	font-weight: 400;
 	font-style: normal;
 	font-size: 3vh;
+	color: #BCC4DB;
 }
-
-/* .smallfont {
-	font-size: 1.3vw;
-} */
 
 .ps {
 	color: blue;

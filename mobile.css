@@ -19,9 +19,13 @@ section {
 
 .link {
   position: static;
-  font-size: 2.2vh;
+  font-size: 3vh;
   margin: 1vh 0;
   display: block;
+}
+
+#homelink {
+  font-size: 3vh;
 }
 
 .descr {
@@ -50,9 +54,5 @@ section {
 }
 
 .contactinfo a, .contactinfo span {
-  font-size: 2.2vh;
-}
-
-#homelink {
   font-size: 2.2vh;
 }

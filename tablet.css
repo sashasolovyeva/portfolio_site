@@ -1,17 +1,36 @@
 @charset "UTF-8";
 
+.heading {
+  font-size: 5vh;
+}
+
+body {
+  font-size: 2.5vh;
+}
+
+.container {
+  padding: 1vh 2vw;
+}
+
 .link {
-  font-size: 2.8vh;
-  margin-top: 78px;
+  position: static;
+  font-size: 3vh;
+  margin: 1vh 0;
+  display: block;
 }
 
 .descr {
-  font-size: 3vh;
+  font-size: 2.5vh;
+  line-height: 140%;
+}
+
+#descriptionofme {
+  width: 46vw;
 }
 
 #homelink {
   margin: 0;
-  font-size: 6vh;
+  font-size: 5vh;
   top: 40vh;
   position:absolute;
 }
@@ -19,4 +38,8 @@
 .klepa {
   max-width: 25vw;
   /* change */
+}
+
+.project-name {
+
 }

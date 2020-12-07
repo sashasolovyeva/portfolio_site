@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>sasha solovyeva</title>
+	<link rel="stylesheet" type="text/css" href="../projects.css">
+</head>
+
+<body>
+	<div class="main">
+    <div class="topnames">
+      <div class="lefttop">
+			     <a href="../index.html" class="name">sasha solovyeva</a>
+           <a href="../index.html" class="link" id="homelink">&lt;home/&gt;</a>
+      </div>
+
+      <div>
+			     <a class="heading">mash up like the masters</a>
+           <div class="hiddenprojectlist projectlist">
+             <a href="../bike" class="project" data-projectid="bike">bike through Berlin</a>
+             <a href="../observatory" class="project" data-projectid="sao">southern Russia observatory experience</a>
+             <a href="../spacepiano" class="project" data-projectid="piano">sound of space</a>
+             <a href="../hrdiagram" class="project" data-projectid="hrdiagram">a star's life</a>
+             <a href="../rijks" class="project" data-projectid="rijks">rijksmuseum artist inspirations</a>
+             <a href="../grandbudapest" class="project" data-projectid="grandb">grand budapest</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="projectcontainer">
+
+      <div class="text">
+        <span data-projectid="mashup1">&lt;prototype id="<span class="p5">p5</span> <span class="ps">photoshop</span> <span class="dh">museumStudies</span> <span class="js">js</span>" date="october2020"/&gt;</span>
+      </div>
+      <video autoplay muted loop>
+        <source src="mashupvid.mov">
+      </video>
+
+      <a class="extlink" href="https://i6.cims.nyu.edu/~as11303/interactive/collage/" target="_blank">try it yourself! &gt;</a>
+
+      <div class="text">
+        <span class="smallerh">documentation</span>
+        <h4>Idea:</h4>
+        <p>This experience allows the user to mash pieces of the 20th century's most famous
+        artworks together and create collages that can be saved. The interface allows for two different kinds
+        of approaches: educational and inspiration-searching.</p>
+        <p>Educationally, the user is encouraged to critically
+        think about the artwork they are modifying and infer the meaning artists put into creation of their art
+        objects. There is also a "Learn and Get Inspired" tab that gives a context on the time the artists lived and their
+        place of origin; each artist's profile is also linked to their corresponding page on the MoMA website to let
+        the user see more of their art and biographies.</p>
+        <p>For all those who are searching for inspiration, this is a perfect opportunity to experimentally mash different
+        styles, colors and patterns for unexpected discoveries. Looking for the juxtapositions to form dynamically?
+        Animate your canvas (and stop them at any point) for more unexpected contrasts and encounters. It also looks
+        so fascinating!</p>
+
+        <h4>Justification:</h4>
+        <p>This project builds on an idea of natural learning happening through rapid juxtapositions
+        of our old and new knowledge, as well as stark contrasts or notable similarities between seemingly
+        unrelated pieces of art. The interface presents a unique opportunity for the user to interactively
+        compare, contrast, juxtapose, and see how collisions of different styles and ideas give birth to new ways of seeing.
+        </p>
+
+        <h4>Technical documentation:</h4>
+        <p>The most notable technical features of the project are:</p>
+        <ul>
+          <li>An off-screen buffer for the canvas (p5.js)</li>
+          <li>Tabbing logic (Vanilla JS) to navigate between different panels</li>
+          <li>A dropdown filter that controls which assets get generated for each artist (JS)</li>
+          <li>An onclick function allowing to choose an asset and make it appear on the canvas
+          based on the mouse position (JS + p5.js)</li>
+          <li>HTML buttons with event handlers to let the user modify the objects or canvas in various ways:
+            <ul>
+              <li>Move mode that allows to relocate a previously placed asset</li>
+              <li>Edit mode that makes two sliders (for height and width) appear on click, prompts the user
+              to choose an object, reads their current height and width and then allows to change them</li>
+              <li>Animate mode that sets objects in motion by changing their x and y position with a
+              randomly generated speed value and controls that they remain on screen with a wraparound logic</li>
+              <li>Remove mode that allows to click on an object that will be immediately deleted from the canvas</li>
+              <li>Clear mode that removes all currently-placed objects from the canvas and wipes them clean
+              (except for the background)</li>
+              <li>Save mode that downloads the canvas as a .png file to the user's machine</li>
+            </ul>
+          </li>
+          <li>A Backgrounds panel that sets a canvas background with a p5.js background() function</li>
+        </ul>
+
+        <h4>Further development:</h4>
+        <p>The possibilities of development of this interface are endless!
+        Here is a number of ways the project can grow in the future:</p>
+        <ul>
+          <li>Letting the user upload their own image to use as a collage background, as well
+          as letting them choose a solid color.</li>
+          <li>Letting the user rotate the objects after putting them on the canvas.</li>
+          <li>Letting the user create custom animations / choose between different modes of animation (e.g. random movement,
+          Perlin noise movement, rotation, collision detection, etc.)</li>
+          <li>Creating a better user interface to easier move and edit objects, especially to resize them.</li>
+          <li>Allowing the user to take notes on their findings during the creative process.</li>
+          <li>Adding icons (instead of just a regular cursor) when the user goes into a Move, Edit or Remove modes.</li>
+        </ul>
+
+        <h4>User manual:</h4>
+        <p>Compare, contrast, juxtapose, and see how collisions of different styles and ideas give birth to
+        new ways of seeing and approaches, to both a master's artwork and your own creative process.
+        Choose an artist from a dropdown menu and click anywhere on the canvas to use pieces of their famous
+        art for your collage! (do not drag and drop)</p>
+        <p>Select Move to relocate any of the objects around the canvas.</p>
+        <p>Select Edit to change width and height of any object.
+        After pressing the Edit button, click on an object that you want to resize
+        and use sliders to adjust width and height separately.</p>
+        <p>Select Animate to make your sketch come to live! This exciting feature
+        allows you to put all of your objects into motion. Be careful with this feature though:
+        the original positions of your objects with not be stored.</p>
+        <p>Select Remove and click on an object that you want to delete from your canvas.</p>
+        <p>Select Clear to start from scratch.</p>
+        <p>Finally, select Save to download your (static) collage as a .png file.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    let headingClick = document.querySelector('.heading')
+    headingClick.onclick = function(event){
+      headingClick.nextElementSibling.classList.toggle('hiddenprojectlist')
+    }
+  </script>
+
+</body>
+</html>

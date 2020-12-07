@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/ron3wep.css");
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	font-family: "Karla";
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3vh;
+	margin: 0;
+  border: solid 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  height: 100vh;
+  overflow: scroll;
+  padding-bottom: 8vh;
+}
+
+.topnames {
+  padding: 1vh 1vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lefttop {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: black;
+  text-decoration: none;
+}
+
+.name:hover {
+  text-decoration: none;
+}
+
+#homelink {
+  color: #BCC4DB;
+  text-decoration: none;
+}
+
+#homelink:hover {
+  text-decoration: underline;
+}
+
+.heading, .name {
+	font-size: 6vh;
+	font-weight: 400;
+}
+
+.heading {
+  color: magenta;
+  cursor: pointer;
+}
+
+.projectcontainer {
+  max-width: 900px;
+  margin: auto;
+}
+
+video {
+  width: 100%;
+  margin: 4vh 0 0 0;
+}
+
+.extlink {
+  color: magenta;
+  font-size: 4vh;
+  float: right;
+  text-decoration: none;
+}
+
+.extlink::after {
+  clear: both;
+}
+
+.project {
+  color: black;
+  font-size: 3vh;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.smallerh {
+  color: #BCC4DB;
+  font-size: 4vh;
+}
+
+h4 {
+  margin: 2vh 0;
+}
+
+.text {
+  margin-top: 8vh;
+  margin-bottom: 2vh;
+  clear: both;
+}
+
+p, ul, li {
+  line-height: 150%;
+}
+
+.projectlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.hiddenprojectlist {
+  display: none;
+}
+
+.ps {
+	color: blue;
+}
+
+.p5 {
+	color: #EE4266;
+}
+
+.dh {
+	color: #1B998B;
+}
+
+.js {
+	color: #FC440F;
+}
+
+.pr {
+	color: #1F23AD;
+}
+
+.gd {
+	color: #9400D3;
+}
