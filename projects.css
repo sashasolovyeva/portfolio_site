@@ -98,7 +98,6 @@ video, img, iframe {
 iframe {
   height: 35vw;
   width: 100%;
-  max-width: 100vw!important;
 }
 
 .extlink {
@@ -260,6 +259,10 @@ p, ul, li {
   .project {
     font-size: 2.2vh;
     /* padding: 1vh 0; */
+  }
+
+  iframe {
+    height: 30vh;
   }
 
 }

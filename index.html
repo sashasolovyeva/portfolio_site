@@ -237,6 +237,8 @@
 					let hiddenPrjSpan = document.querySelectorAll('.hiddenproject')
 					for(let k = 0; k < visiblePrjSpan.length; k++){
 
+						if (!window.matchMedia("(hover: none)").matches) {
+
 						visiblePrjSpan[k].onmouseover = function(event){
 							homeToHide.style.display = 'none';
 
@@ -254,6 +256,7 @@
 									hiddenPrjSpan[j].classList.add('hide')
 							}
 						}
+					}
 					}
 				}
 			}
