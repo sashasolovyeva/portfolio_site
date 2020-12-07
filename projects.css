@@ -89,15 +89,27 @@ a {
   margin: auto;
 }
 
-video, img, iframe {
+video, img {
   width: 100%;
   margin: 4vh 0 0 0;
   max-width: 100vw;
 }
 
-iframe {
-  height: 35vw;
+.videocont {
+  position: relative;
+  overflow: hidden;
   width: 100%;
+  padding-top: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .extlink {
@@ -259,11 +271,6 @@ p, ul, li {
   .project {
     font-size: 2.2vh;
     /* padding: 1vh 0; */
-  }
-
-  iframe {
-    width: 100vw;
-    height: 30vh;
   }
 
 }
