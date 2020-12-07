@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>sasha solovyeva</title>
+	<link rel="stylesheet" type="text/css" href="../projects.css">
+</head>
+
+<body>
+	<div class="main">
+    <div class="topnames">
+      <div class="lefttop">
+			     <a href="../index.html" class="name">sasha solovyeva</a>
+           <a href="../index.html" class="link" id="homelink">&lt;home/&gt;</a>
+      </div>
+
+      <div class="otherprojectlinks">
+			     <a class="heading">MCC MediaLab websites</a>
+           <div class="hiddenprojectlist projectlist">
+             <a href="../immobility" class="project">(im)mobility in Harlem</a>
+             <a href="../mashup" class="project">mash up like the masters</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="projectcontainer">
+
+      <div class="text">
+        <span>&lt;website id="<span class="ps">illustrator</span> <span class="js">html/css</span> <span class="js">js</span>" date="may-december2020"/&gt;</span>
+      </div>
+
+      <a href="http://www.composingdigitalmedia.org/f20_dmtp/index.html" target="_blank"><img src="dmtp.png" alt="website sceeenshot"></a>
+      <a class="extlink" href="http://www.composingdigitalmedia.org/mcc_media_lab/" target="_blank">see the website &gt;</a>
+      <div class="text">
+        <p>
+          This website serves students taking a Digital Media Theory and Practice course,
+          and therefore had to be visually appealing (to inspire students for what they could do
+          in the class) but extremely accessible and easily navigable. I co-designed the site and
+          fully developed it.
+        </p>
+
+      </div>
+
+      <img src="archive.png" alt="website sceeenshot">
+      <div class="text">
+        <p>
+          The project is at its final stages of development.
+        </p>
+        <p>
+          Designed, prototyped and developed by me, this page will serve as an archive for
+          digital work by students across the department. It includes a js-based filtering system that
+          helps the user easily find a project based on a media type and course it belongs to.
+        </p>
+
+      </div>
+
+      <a href="http://www.composingdigitalmedia.org/mcc_media_lab/" target="_blank"><img src="ml.png" alt="website sceeenshot" target="_blank"></a>
+      <a class="extlink" href="http://www.composingdigitalmedia.org/mcc_media_lab/" target="_blank">see the website &gt;</a>
+
+      <div class="text">
+
+        <p>
+          A team effort of building a quick, well-designed, clean, and efficient Lab website that serves
+          the entire MCC department. I have developed index, Visit Us and mediaWorks_ pages, and regularly
+          maintain the entire site.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    let headingClick = document.querySelector('.heading')
+    headingClick.onclick = function(event){
+      headingClick.nextElementSibling.classList.toggle('hiddenprojectlist')
+      headingClick.classList.toggle('periwinkle')
+    }
+  </script>
+
+</body>
+</html>
