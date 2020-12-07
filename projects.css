@@ -96,6 +96,7 @@ video, img, iframe {
 
 iframe {
   height: 35vw;
+  width: 100%;
 }
 
 .extlink {
