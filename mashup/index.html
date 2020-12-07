@@ -16,23 +16,32 @@
 
 <body>
 	<div class="main">
+		<div class="outerpageborder">
+    </div>
+
     <div class="topnames">
       <div class="lefttop">
 			     <a href="../index.html" class="name">sasha solovyeva</a>
            <a href="../index.html" class="link" id="homelink">&lt;home/&gt;</a>
       </div>
 
-				<div class="otherprojectlinks">
-			     <a class="heading">mash up like the masters</a>
-           <div class="hiddenprojectlist projectlist">
-             <a href="../bike" class="project" data-projectid="bike">bike through Berlin</a>
-             <a href="../observatory" class="project" data-projectid="sao">southern Russia observatory experience</a>
-             <a href="../spacepiano" class="project" data-projectid="piano">sound of space</a>
-             <a href="../hrdiagram" class="project" data-projectid="hrdiagram">a star's life</a>
-             <a href="../rijks" class="project" data-projectid="rijks">rijksmuseum artist inspirations</a>
-             <a href="../grandbudapest" class="project" data-projectid="grandb">grand budapest</a>
-          </div>
-				</div>
+			<div class="otherprojectlinks">
+					 <div class="heading">
+						 <a>mash up like the masters</a>
+					 </div>
+					 <div class="hiddenprojectlist projectlist">
+						 <a href="../mashup" class="project">mash up like the masters</a>
+						 <a href="../bike" class="project">bike through Berlin</a>
+						 <a href="../observatory" class="project">southern Russia observatory experience</a>
+						 <a href="../spacepiano" class="project">sound of Space</a>
+						 <a href="../hrdiagram" class="project">a star's life</a>
+						 <a href="../rijks" class="project">rijksmuseum artist inspirations</a>
+						 <a href="../grandbudapest" class="project">grand budapest</a>
+						 <a href="../creationofadam" class="project">creation of Adam</a>
+						 <a href="../medialab" class="project">MCC MediaLab websites</a>
+             <a href="../mashup" class="project">mash up like the masters</a>
+					</div>
+			</div>
     </div>
 
     <div class="projectcontainer">
@@ -74,22 +83,11 @@
         <p>The most notable technical features of the project are:</p>
         <ul>
           <li>An off-screen buffer for the canvas (p5.js)</li>
-          <li>Tabbing logic (Vanilla JS) to navigate between different panels</li>
-          <li>A dropdown filter that controls which assets get generated for each artist (JS)</li>
+          <li>Tabbing logic (js) to navigate between different panels</li>
+          <li>A dropdown filter that controls which assets get generated for each artist (js)</li>
           <li>An onclick function allowing to choose an asset and make it appear on the canvas
-          based on the mouse position (JS + p5.js)</li>
-          <li>HTML buttons with event handlers to let the user modify the objects or canvas in various ways:
-            <ul>
-              <li>Move mode that allows to relocate a previously placed asset</li>
-              <li>Edit mode that makes two sliders (for height and width) appear on click, prompts the user
-              to choose an object, reads their current height and width and then allows to change them</li>
-              <li>Animate mode that sets objects in motion by changing their x and y position with a
-              randomly generated speed value and controls that they remain on screen with a wraparound logic</li>
-              <li>Remove mode that allows to click on an object that will be immediately deleted from the canvas</li>
-              <li>Clear mode that removes all currently-placed objects from the canvas and wipes them clean
-              (except for the background)</li>
-              <li>Save mode that downloads the canvas as a .png file to the user's machine</li>
-            </ul>
+          based on the mouse position (js + p5.js)</li>
+          <li>HTML buttons with event handlers to let the user modify the objects or canvas in various ways
           </li>
           <li>A Backgrounds panel that sets a canvas background with a p5.js background() function</li>
         </ul>

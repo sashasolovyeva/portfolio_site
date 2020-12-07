@@ -143,6 +143,17 @@ section a:hover {
 	margin: 0;
 }
 
+#cont1descr {
+	width: 70%;
+	position: absolute;
+	bottom: 2vh;
+}
+
+#cont2descr {
+	position: absolute;
+	bottom: 2vh;
+}
+
 .project {
 	color: black;
 	text-decoration: none;

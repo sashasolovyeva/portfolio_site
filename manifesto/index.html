@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>sasha solovyeva</title>
+	<link rel="stylesheet" type="text/css" href="../projects.css">
+</head>
+
+<body>
+	<div class="main">
+    <div class="outerpageborder">
+    </div>
+
+    <div class="topnames">
+      <div class="lefttop">
+			     <a href="../index.html" class="name">sasha solovyeva</a>
+           <a href="../index.html" class="link" id="homelink">&lt;home/&gt;</a>
+      </div>
+
+			<div class="otherprojectlinks">
+			     <div class="heading">
+						 <a>data manifesto</a>
+					 </div>
+           <div class="hiddenprojectlist projectlist">
+						 <a href="../immobility" class="project">(im)mobility in Harlem</a>
+             <a href="../strand" class="project">Strand-perception parabola</a>
+             <a href="../rfe" class="project">Radio Free Europe: politics infographics</a>
+             <a href="../manifesto" class="project">data manifesto</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="projectcontainer">
+
+      <div class="text">
+        <span>&lt;print id="<span class="ps">inDesign</span> <span class="dh">mediaStudies</span> <span class="ps">graphicDesign</span>" date="october2020"/&gt;</span>
+      </div>
+
+      <iframe style="border: 1px solid #777;" src="https://indd.adobe.com/embed/6f048d84-c58f-4a22-b15c-3036ddf9141a?startpage=1&allowFullscreen=true" height="460px" frameborder="0" allowfullscreen=""></iframe>
+
+
+      <div class="text">
+        <p>
+          Researching privacy policies and terms of service of corporations and
+          asking a question: what are my values as a media maker and a designer?
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    let headingClick = document.querySelector('.heading')
+    headingClick.onclick = function(event){
+      headingClick.nextElementSibling.classList.toggle('hiddenprojectlist')
+      headingClick.classList.toggle('periwinkle')
+    }
+  </script>
+
+</body>
+</html>

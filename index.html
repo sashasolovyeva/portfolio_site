@@ -34,7 +34,7 @@
 					<a href="about" class="link" id="aboutlink">&lt;about/&gt;</a>
 
 					<div class="hiddenelement hide" data-id="dighum">
-						<p class="descr worktype_descr"> interdiscipinary work in visual journalism, field research
+						<p class="descr worktype_descr" id="cont1descr"> interdiscipinary work in visual journalism, field research
 							and creative writing that makes me uniquely qualified to bridge the gap
 							between technical, creative and academic.
 						</p>
@@ -53,6 +53,7 @@
 					<img src="projects/piano2.png" id="star_piano2" alt="light blue star" width="120" height="auto" class="hiddenproject hide" data-projectid="piano">
 					<img src="projects/piano3.png" id="star_piano3" alt="dark blue star" width="160" height="auto" class="hiddenproject hide" data-projectid="piano">
 					<img src="projects/mendl1.png" id="box" alt="meindl box" width="150" height="auto" class="hiddenproject hide" data-projectid="grandb">
+					<img src="projects/adam.jpg" alt="creation of adam" width="400" height="auto" class="hiddenproject hide" data-projectid="creation">
 
 					<div class="hiddenelement hide" data-id="webdev">
 
@@ -74,11 +75,12 @@
 						<a class="project" data-projectid="hrdiagram" href="hrdiagram"><span class="antiqua">(5)</span> a star's life</a>
 						<a class="project" data-projectid="rijks" href="rijks"><span class="antiqua">(6)</span> rijksmuseum artist inspirations</a>
 						<a class="project" data-projectid="grandb" href="grandbudapest"><span class="antiqua">(7)</span> grand budapest</a>
+						<a class="project" data-projectid="creation" href="creationofadam"><span class="antiqua">(8)</span> creation of Adam</a>
 
 					</div>
 
 					<div class="hiddenelement hide" data-id="webdev">
-						<p class="descr worktype_descr">websites, interactive experiences and design work
+						<p class="descr worktype_descr" id="cont2descr">websites, interactive experiences and design work
 							made for all intents and purposes of the MCC MediaLab and personal creative ambitions.
 						</p>
 					</div>
@@ -87,6 +89,7 @@
 						<span class="hiddenproject hide" data-projectid="harlem2">&lt;website id="<span class="ps">photoshop</span> <span class="js">html/css</span> <span class="js">jQuery</span> <span class="ps">premiere</span> <span class="ps">audition</span>"/&gt;</span>
 						<span class="hiddenproject hide" data-projectid="strand">&lt;essay id="<span class="dh">writing</span>"/&gt; </span>
 						<span class="hiddenproject hide" data-projectid="rfe">&lt;infographic id="<span class="ps">illustrator</span> <span class="dh">visualJournalism</span>"/&gt;</span>
+						<span class="hiddenproject hide" data-projectid="manifesto">&lt;print id="<span class="ps">inDesign</span> <span class="dh">mediaStudies</span> <span class="ps">graphicDesign</span>"/&gt;</span>
 					</div>
 				</div>
 
@@ -112,6 +115,7 @@
 					<img src="projects/harlem.png" alt="subwaylines" class="hiddenproject hide harlem" data-projectid="harlem2">
 					<img src="projects/books.png" height="125" width="auto" alt="colorful books" class="hiddenproject hide" data-projectid="strand">
 					<img src="projects/rfe.png" height="auto" width="200" alt="inforgraphic circles" class="hiddenproject hide" data-projectid="rfe">
+					<img src="projects/datagraphic.png" height="auto" width="400" alt="data graphic" class="hiddenproject hide" data-projectid="manifesto">
 				</div>
 
 				<!-- 4 _________________________________________________________________________________________________________________________________________ -->
@@ -122,6 +126,7 @@
 						<a class="project" href="immobility" data-projectid="harlem2" href="immobility"><span class="antiqua">(1)</span> (im)mobility in Harlem</a>
 						<a class="project" href="strand" data-projectid="strand"><span class="antiqua">(2)</span> Strand-perception parabola</a>
 						<a class="project" href="rfe" data-projectid="rfe"><span class="antiqua">(3)</span> Radio Free Europe: politics infographics</a>
+						<a class="project" href="manifesto" data-projectid="manifesto"><span class="antiqua">(4)</span> data manifesto</a>
 
 					</div>
 
@@ -133,6 +138,7 @@
 						<span class="hiddenproject hide" data-projectid="hrdiagram">&lt;sketch id="<span class="pr">processing</span> <span class="dh">astrophysics</span>"/&gt;</span>
 						<span class="hiddenproject hide" data-projectid="rijks">&lt;sketch id="<span class="pr">processing</span> <span class="dh">museumStudies</span> <span class="js">api</span>"/&gt;</span>
 						<span class="hiddenproject hide" data-projectid="grandb">&lt;sketch id="<span class="pr">processing</span>"/&gt;</span>
+						<span class="hiddenproject hide" data-projectid="creation">&lt;ar id="<span class="pr">unity</span> <span class="gd">ar</span> <span class="dh">museumStudies</span>"/&gt;</span>
 					</div>
 
 					<img src="projects/harlem.png" alt="subwaylines" class="hiddenproject hide harlem" data-projectid="harlem">
@@ -155,59 +161,32 @@
 		let homeToHide = document.getElementById("homelink")
 		let projectsToHide = document.getElementById("projectlink")
 
+		if(window.localStorage.getItem("pagestate")){
+		for(let i = 0; i < projectLists.length; i++){
+			if(projectName[i].dataset.id === window.localStorage.getItem("pagestate")){
+				chooseProjectCategory(projectName[i])
+				homeToHide.onclick = function(event){
+					homeButtonAction()
+				}
+			}
+		}
+	}
+
+
 		for(let i = 0; i < rectDivs.length; i++){
 
 			projectName[i].onclick = function(event){
 				ourHeading = event.currentTarget
 
 				if(ourHeading.nextElementSibling.classList.contains('hide')){
-					// ABOUT / HOME TOGGLE
-					aboutToHide.style.display = 'none';
-					projectsToHide.style.display = 'none';
-					homeToHide.style.display = 'block';
-
-					for(let i = 0; i < projectName.length; i++){
-						projectName[i].style.display = 'none';
-						projectLists[i].classList.add('hide')
-					}
-					ourHeading.style.display = 'block';
-					ourHeading.nextElementSibling.classList.remove('hide')
-
-					// HEADING ARROW
-					ourHeading.children[0].classList.remove('hide')
-					ourHeading.children[1].classList.add('hide')
-
-					for(let i = 0; i < mainHiddenElems.length; i++){
-						if(mainHiddenElems[i].dataset.id == ourHeading.dataset.id){
-							mainHiddenElems[i].classList.remove('hide')
-
-							let visiblePrjSpan = ourHeading.nextElementSibling.querySelectorAll('.project')
-							let hiddenPrjSpan = document.querySelectorAll('.hiddenproject')
-							for(let k = 0; k < visiblePrjSpan.length; k++){
-
-								visiblePrjSpan[k].onmouseover = function(event){
-									homeToHide.style.display = 'none';
-
-									for(let j = 0; j < hiddenPrjSpan.length; j++){
-										console.log(hiddenPrjSpan[j])
-										if(hiddenPrjSpan[j].dataset.projectid == visiblePrjSpan[k].dataset.projectid){
-											hiddenPrjSpan[j].classList.remove('hide')
-										}
-									}
-								}
-								// hide
-								visiblePrjSpan[k].onmouseout = function(event){
-									homeToHide.style.display = 'block';
-									for(let j = 0; j < hiddenPrjSpan.length; j++){
-											hiddenPrjSpan[j].classList.add('hide')
-									}
-								}
-							}
-						}
-					}
+					// LOCAL STORAGE SETTING
+					window.localStorage.setItem("pagestate", ourHeading.dataset.id);
+					// CALLING THE FUNCTION
+					chooseProjectCategory(ourHeading)
 
 				// }
 			} else {
+				// localStorage.removeItem("mytime");
 				homeToHide.style.display = 'none';
 				aboutToHide.style.display = 'block';
 				projectsToHide.style.display = 'block';
@@ -228,28 +207,78 @@
 			}
 
 			homeToHide.onclick = function(event){
-				homeToHide.style.display = 'none';
-				aboutToHide.style.display = 'block';
-				projectsToHide.style.display = 'block';
-				for(let i = 0; i < projectName.length; i++){
-					projectName[i].style.display = 'block';
-					if(i > 0){
-						projectLists[i].classList.add('hide')
-						projectName[i].children[0].classList.add('hide')
-						projectName[i].children[1].classList.remove('hide')
-					} else {
-						projectLists[i].classList.remove('hide')
-					}
-				}
-
-				for(let i = 0; i < mainHiddenElems.length; i++){
-						mainHiddenElems[i].classList.add('hide')
-				}
+				homeButtonAction()
 			}
 
 			}
 		}
 
+		function chooseProjectCategory(target){
+			aboutToHide.style.display = 'none';
+			projectsToHide.style.display = 'none';
+			homeToHide.style.display = 'block';
+
+			for(let m = 0; m < projectName.length; m++){
+				projectName[m].style.display = 'none';
+				projectLists[m].classList.add('hide')
+			}
+			target.style.display = 'block';
+			target.nextElementSibling.classList.remove('hide')
+
+			// HEADING ARROW
+			target.children[0].classList.remove('hide')
+			target.children[1].classList.add('hide')
+
+			for(let n = 0; n < mainHiddenElems.length; n++){
+				if(mainHiddenElems[n].dataset.id == target.dataset.id){
+					mainHiddenElems[n].classList.remove('hide')
+
+					let visiblePrjSpan = target.nextElementSibling.querySelectorAll('.project')
+					let hiddenPrjSpan = document.querySelectorAll('.hiddenproject')
+					for(let k = 0; k < visiblePrjSpan.length; k++){
+
+						visiblePrjSpan[k].onmouseover = function(event){
+							homeToHide.style.display = 'none';
+
+							for(let j = 0; j < hiddenPrjSpan.length; j++){
+								console.log(hiddenPrjSpan[j])
+								if(hiddenPrjSpan[j].dataset.projectid == visiblePrjSpan[k].dataset.projectid){
+									hiddenPrjSpan[j].classList.remove('hide')
+								}
+							}
+						}
+						// hide
+						visiblePrjSpan[k].onmouseout = function(event){
+							homeToHide.style.display = 'block';
+							for(let j = 0; j < hiddenPrjSpan.length; j++){
+									hiddenPrjSpan[j].classList.add('hide')
+							}
+						}
+					}
+				}
+			}
+		}
+
+		function homeButtonAction(){
+			window.localStorage.removeItem("pagestate");
+			homeToHide.style.display = 'none';
+			aboutToHide.style.display = 'block';
+			projectsToHide.style.display = 'block';
+			for(let i = 0; i < projectName.length; i++){
+				projectName[i].style.display = 'block';
+				if(i > 0){
+					projectLists[i].classList.add('hide')
+					projectName[i].children[0].classList.add('hide')
+					projectName[i].children[1].classList.remove('hide')
+				} else {
+					projectLists[i].classList.remove('hide')
+				}
+			}
+
+			for(let i = 0; i < mainHiddenElems.length; i++){
+					mainHiddenElems[i].classList.add('hide')
+			}
+		}
 
 	</script>
 
