@@ -49,6 +49,7 @@ a {
 #homelink {
   color: #BCC4DB;
   text-decoration: none;
+  font-size: 4vh;
 }
 
 #homelink:hover {
@@ -65,12 +66,16 @@ a {
   cursor: pointer;
 }
 
+.otherprojectlinks {
+  text-align: right;
+}
+
 .projectcontainer {
   max-width: 900px;
   margin: auto;
 }
 
-video {
+video, img {
   width: 100%;
   margin: 4vh 0 0 0;
 }
@@ -89,6 +94,7 @@ video {
 .project {
   color: black;
   font-size: 3vh;
+  padding: 1vh 0;
 }
 
 a:hover {
@@ -145,4 +151,56 @@ p, ul, li {
 
 .gd {
 	color: #9400D3;
+}
+
+.periwinkle {
+  color: #BCC4DB;
+}
+
+@media only screen and (max-width:900px) {
+  body {
+    font-size: 2.2vh;
+  }
+
+  .main {
+    padding: .5vh 1vh;
+  }
+
+  .topnames {
+    padding: 0;
+  }
+
+  .lefttop, .otherprojectlinks {
+    width: 50%;
+    /* border: solid; */
+  }
+
+  .name, .heading {
+    font-size: 4vh;
+  }
+
+  .topnames {
+    display: block;
+  }
+
+  .lefttop {
+    float: left;
+  }
+
+  .otherprojectlinks {
+    float: right;
+    text-align: right;
+  }
+
+  .projectcontainer {
+    clear: both;
+    margin-top: 20vh;
+    margin-bottom: 8vh;
+  }
+
+  .project {
+    font-size: 2.2vh;
+    /* padding: 1vh 0; */
+  }
+
 }

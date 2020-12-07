@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>sasha solovyeva</title>
+	<link rel="stylesheet" type="text/css" href="../projects.css">
+</head>
+
+<body>
+	<div class="main">
+    <div class="topnames">
+      <div class="lefttop">
+			     <a href="../index.html" class="name">sasha solovyeva</a>
+           <a href="../index.html" class="link" id="homelink">&lt;home/&gt;</a>
+      </div>
+
+      <div class="otherprojectlinks">
+			     <a class="heading">(im)mobility in Harlem</a>
+           <div class="hiddenprojectlist projectlist">
+             <a href="../medialab" class="project">MCC MediaLab websites</a>
+             <a href="../mashup" class="project">mash up like the masters</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="projectcontainer">
+
+      <div class="text">
+        <span>&lt;website id="<span class="ps">photoshop</span> <span class="js">html/css</span> <span class="js">jQuery</span> <span class="ps">premiere</span> <span class="ps">audition</span>" date="december2019"/&gt;</span>
+      </div>
+
+      <a href="http://composingdigitalmedia.org/f19_dmtp/mon/ssa/" target="_blank"><img src="home.png" alt="website sceeenshot"></a>
+      <a href="http://composingdigitalmedia.org/f19_dmtp/mon/ssa/home.html" target="_blank"><img src="index.png" alt="website sceeenshot"></a>
+      <a href="http://composingdigitalmedia.org/f19_dmtp/mon/ssa/imagegallery.html" target="_blank"><img src="photog.png" alt="website sceeenshot" target="_blank"></a>
+
+      <a class="extlink" href="http://composingdigitalmedia.org/f19_dmtp/mon/ssa/" target="_blank">see the website &gt;</a>
+
+
+      <div class="text">
+        <span class="smallerh">documentation</span>
+
+        <p><a href="https://www.theguardian.com/cities/2019/may/28/people-arent-disabled-their-city-is-inside-europes-most-accessible-city" target="_blank" class="periwinkle">
+          "People are not disabled. Their city is."</a>
+            A field study on the lack of accessibility in New York, a digital rendition of its aspects and implications, and an active search for solutions.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    let headingClick = document.querySelector('.heading')
+    headingClick.onclick = function(event){
+      headingClick.nextElementSibling.classList.toggle('hiddenprojectlist')
+      headingClick.classList.toggle('periwinkle')
+    }
+  </script>
+
+</body>
+</html>

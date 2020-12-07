@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>sasha solovyeva</title>
+	<link rel="stylesheet" type="text/css" href="../projects.css">
+</head>
+
+<body>
+	<div class="main">
+    <div class="topnames">
+      <div class="lefttop">
+			     <a href="../index.html" class="name">sasha solovyeva</a>
+           <a href="../index.html" class="link" id="homelink">&lt;home/&gt;</a>
+      </div>
+
+      <div class="otherprojectlinks">
+			     <a class="heading">a star's life</a>
+           <div class="hiddenprojectlist projectlist">
+             <a href="../mashup" class="project" data-projectid="bike">mash up like the masters</a>
+             <a href="../bike" class="project" data-projectid="bike">bike through Berlin</a>
+             <a href="../observatory" class="project" data-projectid="sao">southern Russia observatory experience</a>
+             <a href="../spacepiano" class="project" data-projectid="piano">sound of space</a>
+             <a href="../rijks" class="project" data-projectid="rijks">rijksmuseum artist inspirations</a>
+             <a href="../grandbudapest" class="project" data-projectid="grandb">grand budapest</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="projectcontainer">
+
+      <div class="text">
+        <span>&lt;sketch id="<span class="pr">processing</span> <span class="dh">astrophysics</span>" date="may2020"/&gt;</span>
+      </div>
+
+      <video controls autoplay muted loop>
+        <source src="hrdiagram.mp4">
+      </video>
+
+      <div class="text">
+        <span class="smallerh">documentation</span>
+
+        <p>I thought that
+          <a href="https://www.youtube.com/watch?v=_EtlJCfaxdc&ab_channel=ConceptualAcademy" target="_blank" class="periwinkle">
+          the Hertzprung-Russell diagram</a> was pretty fascinating!
+           You know, a quick handy chart that denotes a life cycle of every star from
+           Sirius to the Alpha Centauri.</p> <p>Wondering what will happen to our own Sun when the fusion stops
+           and into explodes into a Red Giant? Will it ever become a Black Hole? Why or why not?
+           This animated interactive experience will answer these questions and, hopefully, make you as obsessed
+           with stellar life cycles as I am.
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    let headingClick = document.querySelector('.heading')
+    headingClick.onclick = function(event){
+      headingClick.nextElementSibling.classList.toggle('hiddenprojectlist')
+      headingClick.classList.toggle('periwinkle')
+    }
+  </script>
+
+</body>
+</html>

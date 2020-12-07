@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>sasha solovyeva</title>
+	<link rel="stylesheet" type="text/css" href="../projects.css">
+</head>
+
+<body>
+	<div class="main">
+    <div class="topnames">
+      <div class="lefttop">
+			     <a href="../index.html" class="name">sasha solovyeva</a>
+           <a href="../index.html" class="link" id="homelink">&lt;home/&gt;</a>
+      </div>
+
+      <div class="otherprojectlinks">
+			     <a class="heading">southern Russia observatory experience</a>
+           <div class="hiddenprojectlist projectlist">
+             <a href="../mashup" class="project" data-projectid="bike">mash up like the masters</a>
+             <a href="../bike" class="project" data-projectid="bike">bike through Berlin</a>
+             <a href="../spacepiano" class="project" data-projectid="piano">sound of space</a>
+             <a href="../hrdiagram" class="project" data-projectid="hrdiagram">a star's life</a>
+             <a href="../rijks" class="project" data-projectid="rijks">rijksmuseum artist inspirations</a>
+             <a href="../grandbudapest" class="project" data-projectid="grandb">grand budapest</a>
+          </div>
+      </div>
+    </div>
+
+    <div class="projectcontainer">
+
+      <div class="text">
+        <span>&lt;sketch id="<span class="p5">a-frame</span> <span class="gd">ar</span> <span class="gd">vr</span> <span class="dh">astrophysics</span>" date="december2020"/&gt;</span>
+      </div>
+
+      <div class="text">
+        <!-- <span class="smallerh">documentation</span> -->
+
+        <p>
+          This project involving browser-based 3D graphics, AR and motion detection is in development. Stay tuned!
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    let headingClick = document.querySelector('.heading')
+    headingClick.onclick = function(event){
+      headingClick.nextElementSibling.classList.toggle('hiddenprojectlist')
+      headingClick.classList.toggle('periwinkle')
+    }
+  </script>
+
+</body>
+</html>
