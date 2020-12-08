@@ -23,8 +23,8 @@ body {
 
 .contactinfo {
 	position: absolute;
-	bottom: 4%;
-	right: 4%;
+	bottom: calc(.5vh + 2px);
+	right: 1vh;
 }
 
 .contactinfo a, .contactinfo span {

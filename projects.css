@@ -92,7 +92,7 @@ a {
 video, img {
   width: 100%;
   margin: 4vh 0 0 0;
-  max-width: 100vw;
+  /* max-width: 100vw; */
 }
 
 .videocont {
