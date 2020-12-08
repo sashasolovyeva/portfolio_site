@@ -143,13 +143,18 @@ section a:hover {
 	margin: 0;
 }
 
-#cont1descr, #contnarrowed {
+#cont1descr {
 	width: 70%;
 	position: absolute;
 	bottom: 2vh;
 }
 
 #cont2descr {
+	position: absolute;
+	bottom: 2vh;
+}
+
+.contnarrowed {
 	position: absolute;
 	bottom: 2vh;
 }
