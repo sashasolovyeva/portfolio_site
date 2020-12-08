@@ -29,6 +29,7 @@ body {
 }
 
 #homelink {
+  top: 2%;
   margin: 0;
   font-size: 5vh;
   position: absolute;
