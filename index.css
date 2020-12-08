@@ -110,9 +110,11 @@ section {
 .container .project {
 	display: block;
 	padding: .3vw 0;
+	/* text-decoration: underline; */
 }
 
 .container .project:hover{
+	/* text-decoration-color: #BCC4DB; */
 	text-decoration: none;
 }
 
@@ -129,6 +131,14 @@ section a:hover {
 .projectlist, .hiddenproject {
 	/* margin: 1vw 2vw; */
 	display: block;
+}
+
+.prjarrow {
+	display: none;
+}
+
+.projectlist .project:hover .prjarrow {
+	display: inline-block;
 }
 
 .hiddenproject {
