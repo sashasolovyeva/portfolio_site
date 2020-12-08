@@ -55,7 +55,7 @@
 					<img src="projects/mendl1.png" id="box" alt="meindl box" width="150" height="auto" class="hiddenproject hide" data-projectid="grandb">
 					<img src="projects/adam.jpg" alt="creation of adam" width="400" height="auto" class="hiddenproject hide" data-projectid="creation">
 
-					<div class="hiddenelement hide" data-id="webdev">
+					<div class="hiddenelement hide" id="contnarrowed" data-id="webdev">
 
 						<span class="hiddenproject hide" data-projectid="mashup2">&lt;prototype id="<span class="p5">p5</span> <span class="ps">photoshop</span> <span class="dh">museumStudies</span> <span class="js">js</span>"/&gt;</span>
 						<span class="hiddenproject hide" data-projectid="harlem">&lt;website id="<span class="ps">photoshop</span> <span class="js">html/css</span> <span class="js">jQuery</span> <span class="ps">premiere</span> <span class="ps">audition</span>"/&gt;</span>
@@ -66,7 +66,7 @@
 				<!-- 2 _________________________________________________________________________________________________________________________________________ -->
 
 				<div class="container">
-					<a class="heading" data-id="crcode"><span class="hide">&lt;</span> creative code <span>&gt;</span></a>
+					<a class="heading" data-id="crcode"><span class="hide">&lt;</span> creative code <span class="hide">&gt;</span></a>
 					<div class="projectlist hide">
 						<a class="project" data-projectid="mashup1" href="mashup"><span class="antiqua">(1)</span> mash up like the masters</a>
 						<a class="project" data-projectid="bike" href="bike"><span class="antiqua">(2)</span> bike through Berlin</a>
@@ -96,7 +96,7 @@
 				<!-- 3 _________________________________________________________________________________________________________________________________________ -->
 
 				<div class="container">
-					<a class="heading" data-id="webdev"><span class="hide">&lt;</span> design and web dev <span>&gt;</span></a>
+					<a class="heading" data-id="webdev"><span class="hide">&lt;</span> design and web dev <span class="hide">&gt;</span></a>
 					<div class="projectlist hide">
 						<a class="project" href="immobility" data-projectid="harlem"><span class="antiqua">(1)</span> (im)mobility in Harlem</a>
 						<!-- <a class="project" data-projectid="dmtp"><span class="antiqua">(3)</span> a reimagined course website</a>
@@ -121,7 +121,7 @@
 				<!-- 4 _________________________________________________________________________________________________________________________________________ -->
 
 				<div class="container">
-					<a class="heading" data-id="dighum"><span class="hide">&lt;</span> digital humanities <span>&gt;</span></a>
+					<a class="heading" data-id="dighum"><span class="hide">&lt;</span> digital humanities <span class="hide">&gt;</span></a>
 					<div class="projectlist hide">
 						<a class="project" href="immobility" data-projectid="harlem2" href="immobility"><span class="antiqua">(1)</span> (im)mobility in Harlem</a>
 						<a class="project" href="strand" data-projectid="strand"><span class="antiqua">(2)</span> Strand-perception parabola</a>
@@ -161,16 +161,16 @@
 		let homeToHide = document.getElementById("homelink")
 		let projectsToHide = document.getElementById("projectlink")
 
-		if(window.localStorage.getItem("pagestate")){
-		for(let i = 0; i < projectLists.length; i++){
-			if(projectName[i].dataset.id === window.localStorage.getItem("pagestate")){
-				chooseProjectCategory(projectName[i])
-				homeToHide.onclick = function(event){
-					homeButtonAction()
-				}
-			}
-		}
-	}
+	// 	if(window.sessionStorage.getItem("pagestate")){
+	// 	for(let i = 0; i < projectLists.length; i++){
+	// 		if(projectName[i].dataset.id === window.sessionStorage.getItem("pagestate")){
+	// 			chooseProjectCategory(projectName[i])
+	// 			homeToHide.onclick = function(event){
+	// 				homeButtonAction()
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 
 		for(let i = 0; i < rectDivs.length; i++){
@@ -180,13 +180,13 @@
 
 				if(ourHeading.nextElementSibling.classList.contains('hide')){
 					// LOCAL STORAGE SETTING
-					window.localStorage.setItem("pagestate", ourHeading.dataset.id);
+					// window.sessionStorage.setItem("pagestate", ourHeading.dataset.id);
 					// CALLING THE FUNCTION
 					chooseProjectCategory(ourHeading)
 
 				// }
 			} else {
-				localStorage.removeItem("pagestate");
+				// sessionStorage.removeItem("pagestate");
 				homeToHide.style.display = 'none';
 				aboutToHide.style.display = 'block';
 				projectsToHide.style.display = 'block';
@@ -198,8 +198,8 @@
 						projectLists[i].classList.remove('hide')
 					}
 				}
-				ourHeading.children[0].classList.add('hide')
-				ourHeading.children[1].classList.remove('hide')
+				// ourHeading.children[0].classList.add('hide')
+				// ourHeading.children[1].classList.remove('hide')
 
 				for(let i = 0; i < mainHiddenElems.length; i++){
 						mainHiddenElems[i].classList.add('hide')
@@ -226,8 +226,8 @@
 			target.nextElementSibling.classList.remove('hide')
 
 			// HEADING ARROW
-			target.children[0].classList.remove('hide')
-			target.children[1].classList.add('hide')
+			// target.children[0].classList.remove('hide')
+			// target.children[1].classList.add('hide')
 
 			for(let n = 0; n < mainHiddenElems.length; n++){
 				if(mainHiddenElems[n].dataset.id == target.dataset.id){
@@ -240,7 +240,7 @@
 						if (!window.matchMedia("(hover: none)").matches) {
 
 						visiblePrjSpan[k].onmouseover = function(event){
-							homeToHide.style.display = 'none';
+							// homeToHide.style.display = 'none';
 
 							for(let j = 0; j < hiddenPrjSpan.length; j++){
 								console.log(hiddenPrjSpan[j])
@@ -251,7 +251,7 @@
 						}
 						// hide
 						visiblePrjSpan[k].onmouseout = function(event){
-							homeToHide.style.display = 'block';
+							// homeToHide.style.display = 'block';
 							for(let j = 0; j < hiddenPrjSpan.length; j++){
 									hiddenPrjSpan[j].classList.add('hide')
 							}
@@ -263,7 +263,7 @@
 		}
 
 		function homeButtonAction(){
-			window.localStorage.removeItem("pagestate");
+			// window.sessionStorage.removeItem("pagestate");
 			homeToHide.style.display = 'none';
 			aboutToHide.style.display = 'block';
 			projectsToHide.style.display = 'block';
@@ -271,8 +271,8 @@
 				projectName[i].style.display = 'block';
 				if(i > 0){
 					projectLists[i].classList.add('hide')
-					projectName[i].children[0].classList.add('hide')
-					projectName[i].children[1].classList.remove('hide')
+					// projectName[i].children[0].classList.add('hide')
+					// projectName[i].children[1].classList.remove('hide')
 				} else {
 					projectLists[i].classList.remove('hide')
 				}
