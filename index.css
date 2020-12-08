@@ -138,7 +138,7 @@ section a:hover {
 }
 
 .projectlist .project:hover .prjarrow {
-	display: inline-block;
+	display: inline;
 }
 
 .hiddenproject {
