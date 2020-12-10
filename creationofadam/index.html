@@ -27,7 +27,7 @@
 
 			<div class="otherprojectlinks">
 			     <div class="heading">
-						 <a>creation of Adam</a>
+						 <span class="downarrow headingdown">&gt;</span> <a>creation of Adam</a>
 					 </div>
            <div class="hiddenprojectlist projectlist">
              <a href="../mashup" class="project">mash up like the masters</a>
@@ -87,9 +87,11 @@
 
   <script>
     let headingClick = document.querySelector('.heading')
-    headingClick.onclick = function(event){
+		headingClick.onclick = function(event){
       headingClick.nextElementSibling.classList.toggle('hiddenprojectlist')
-      headingClick.classList.toggle('periwinkle')
+			headingClick.classList.toggle('periwinkle')
+			headingClick.children[0].classList.toggle('headingdown')
+			headingClick.children[0].classList.toggle('headingup')
     }
   </script>
 

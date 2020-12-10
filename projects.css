@@ -76,8 +76,22 @@ a {
   cursor: pointer;
 }
 
-.heading a {
+.headingup {
+	/* animation: rotatearrow 3s; */
+	transform: rotate(-90deg);
+}
+
+.headingdown {
+	/* animation: rotatearrow 3s; */
+	transform: rotate(90deg);
+}
+
+/* .heading a {
   display: block;
+} */
+
+.downarrow {
+	display: inline-block;
 }
 
 .otherprojectlinks {
@@ -273,4 +287,9 @@ p, ul, li {
     /* padding: 1vh 0; */
   }
 
+}
+
+@keyframes rotatearrow {
+	0% {transform: rotate(-90deg);}
+	100% {transform: rotate(-90deg);}
 }

@@ -26,7 +26,7 @@
 
 			<div class="otherprojectlinks">
 			     <div class="heading">
-						 <a>Strand-perception parabola</a>
+						  <span class="downarrow headingdown">&gt;</span> <a>Strand-perception parabola</a>
 					 </div>
            <div class="hiddenprojectlist projectlist">
 						 <a href="../immobility" class="project">(im)mobility in Harlem</a>
@@ -87,6 +87,8 @@
     headingClick.onclick = function(event){
       headingClick.nextElementSibling.classList.toggle('hiddenprojectlist')
       headingClick.classList.toggle('periwinkle')
+			headingClick.children[0].classList.toggle('headingdown')
+			headingClick.children[0].classList.toggle('headingup')
     }
   </script>
 
