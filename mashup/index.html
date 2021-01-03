@@ -53,7 +53,7 @@
 				Your browser does not support the video tag.
       </video>
 
-      <a class="extlink" href="https://i6.cims.nyu.edu/~as11303/interactive/collage/" target="_blank">try it yourself! &gt;</a>
+      <a class="extlink" href="https://i6.cims.nyu.edu/~as11303/webdev/finalproject/" target="_blank">try it yourself! &gt;</a>
 
       <div class="text">
         <span class="smallerh">documentation</span>
@@ -82,6 +82,8 @@
         <p>The most notable technical features of the project are:</p>
         <ul>
           <li>An off-screen buffer for the canvas (p5.js)</li>
+					<li>Backend with PHP and AJAX to let the user save their work to the public gallery and add their name and a note about their creative process</li>
+					<li>With a base-64 conversion algorithm, an feature that lets the user upload their own image to use in a collage.</li>
           <li>Tabbing logic (js) to navigate between different panels</li>
           <li>A dropdown filter that controls which assets get generated for each artist (js)</li>
           <li>An onclick function allowing to choose an asset and make it appear on the canvas
@@ -91,12 +93,19 @@
           <li>A Backgrounds panel that sets a canvas background with a p5.js background() function</li>
         </ul>
 
+				<h4>More on backend</h4>
+				<p>To encourage people to share their discoveries while collaging and compile creative work into a
+					gallery, I have added a server-side component to this project! If the user clicks on
+					"save to our library to share with others!", they are prompted to input their name and a comment.
+					All of this data then gets packages into a JSON file which is parsed on an imagegallery.php page
+					into a full-fledged gallery: (<a href="https://i6.cims.nyu.edu/~as11303/webdev/finalproject/imagegallery.php">x</a>)
+
         <h4>Further development:</h4>
         <p>The possibilities of development of this interface are endless!
         Here is a number of ways the project can grow in the future:</p>
         <ul>
           <li>Letting the user upload their own image to use as a collage background, as well
-          as letting them choose a solid color.</li>
+          as letting them choose a solid color. (done!)</li>
           <li>Letting the user rotate the objects after putting them on the canvas.</li>
           <li>Letting the user create custom animations / choose between different modes of animation (e.g. random movement,
           Perlin noise movement, rotation, collision detection, etc.)</li>
