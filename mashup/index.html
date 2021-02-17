@@ -31,14 +31,18 @@
 					 </div>
 					 <div class="hiddenprojectlist projectlist">
 						 <a href="../mashup" class="project">mash up like the masters</a>
+						 <a href="../hrdiagram" class="project">a star's life</a>
+						 <a href="../creationofadam" class="project">creation of Adam</a>
+						 <a href="../rijks" class="project">rijksmuseum artist inspirations</a>
 						 <a href="../bike" class="project">bike through Berlin</a>
 						 <a href="../observatory" class="project">southern Russia observatory experience</a>
 						 <a href="../spacepiano" class="project">sound of Space</a>
-						 <a href="../hrdiagram" class="project">a star's life</a>
-						 <a href="../rijks" class="project">rijksmuseum artist inspirations</a>
 						 <a href="../grandbudapest" class="project">grand budapest</a>
-						 <a href="../creationofadam" class="project">creation of Adam</a>
+						 <a href="../immobility" class="project">(im)mobility in Harlem</a>
 						 <a href="../medialab" class="project">MCC MediaLab websites</a>
+						 <a href="../strand" class="project">Strand-perception parabola</a>
+						 <a href="../rfe" class="project">Radio Free Europe: politics infographics</a>
+						 <a href-"../manifesto" class="project">data manifesto</a>
 					</div>
 			</div>
     </div>
@@ -46,30 +50,29 @@
     <div class="projectcontainer">
 
       <div class="text">
-        <span data-projectid="mashup1">&lt;prototype id="<span class="p5">p5</span> <span class="ps">photoshop</span> <span class="dh">museumStudies</span> <span class="js">js</span>" date="october2020"/&gt;</span>
+        <span data-projectid="mashup1">&lt;prototype id="<span class="p5">p5</span> <span class="ps">photoshop</span> <span class="dh">museumStudies</span> <span class="js">js</span> <span class="js">ajax</span> <span class="js">php</span>" date="october2020"/&gt;</span>
       </div>
 
       <video autoplay muted loop playsinline src="mashupvid.mov">
 				Your browser does not support the video tag.
       </video>
 
-      <a class="extlink" href="https://i6.cims.nyu.edu/~as11303/webdev/finalproject/" target="_blank">try it yourself! &gt;</a>
+      <!-- <a class="extlink" href="https://i6.cims.nyu.edu/~as11303/webdev/finalproject/" target="_blank">see live &gt;</a> -->
+      <a class="extlink" href="https://github.com/sashasolovyeva/Mashup_v2_backend" target="_blank">github &gt;</a>
 
       <div class="text">
         <span class="smallerh">documentation</span>
         <h4>Idea:</h4>
-        <p>This experience allows the user to mash pieces of the 20th century's most famous
-        artworks together and create collages that can be saved. The interface allows for two different kinds
-        of approaches: educational and inspiration-searching.</p>
-        <p>Educationally, the user is encouraged to critically
-        think about the artwork they are modifying and infer the meaning artists put into creation of their art
-        objects. There is also a "Learn and Get Inspired" tab that gives a context on the time the artists lived and their
-        place of origin; each artist's profile is also linked to their corresponding page on the MoMA website to let
-        the user see more of their art and biographies.</p>
-        <p>For all those who are searching for inspiration, this is a perfect opportunity to experimentally mash different
-        styles, colors and patterns for unexpected discoveries. Looking for the juxtapositions to form dynamically?
-        Animate your canvas (and stop them at any point) for more unexpected contrasts and encounters. It also looks
-        so fascinating!</p>
+        <p>The experience allows the user to mash pieces of the 20th century's most famous artworks together and create collages that can be saved.
+					There are two possible approaches: educational and inspiration-searching.</p>
+				<p>Educationally, the user is encouraged to critically think about the artwork they are modifying and infer the
+					meaning artists put into creation of their art objects. There is a "Learn and Get Inspired" tab that
+					gives a context on the time the artists lived and their place of origin; each artist's
+					profile is linked to their corresponding page on the MoMA website.</p>
+
+				<p>For all those who are searching for inspiration, this is a perfect opportunity to experimentally mash different styles,
+				colors and patterns for unexpected discoveries. Looking for the juxtapositions to form dynamically?
+				Animate your canvas (and stop them at any point) for more unexpected contrasts and encounters.</p>
 
         <h4>Justification:</h4>
         <p>This project builds on an idea of natural learning happening through rapid juxtapositions
@@ -83,7 +86,7 @@
         <ul>
           <li>An off-screen buffer for the canvas (p5.js)</li>
 					<li>Backend with PHP and AJAX to let the user save their work to the public gallery and add their name and a note about their creative process</li>
-					<li>With a base-64 conversion algorithm, an feature that lets the user upload their own image to use in a collage.</li>
+					<li>With a base-64 conversion algorithm, a feature that lets the user upload their own image to use in a collage.</li>
           <li>Tabbing logic (js) to navigate between different panels</li>
           <li>A dropdown filter that controls which assets get generated for each artist (js)</li>
           <li>An onclick function allowing to choose an asset and make it appear on the canvas
@@ -93,7 +96,7 @@
           <li>A Backgrounds panel that sets a canvas background with a p5.js background() function</li>
         </ul>
 
-				<h4>More on backend</h4>
+				<h4>More on back-end:</h4>
 				<p>To encourage people to share their discoveries while collaging and compile creative work into a
 					gallery, I have added a server-side component to this project! If the user clicks on
 					"save to our library to share with others!", they are prompted to input their name and a comment.
