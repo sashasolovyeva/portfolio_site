@@ -209,6 +209,29 @@ p, ul, li {
   height: auto;
 }
 
+ol li {
+	padding-bottom: 5%;
+}
+
+.fiveimgscontainer {
+	display: flex;
+}
+
+.fiveimgscontainer img {
+	width: 20%;
+	height: auto;
+}
+
+.singleimagecontainer {
+	display: flex;
+	align-items: center;
+}
+
+.singleimagecontainer img {
+	width: 50%;
+	display: block;
+}
+
 .ps {
 	color: blue;
 }

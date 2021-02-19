@@ -50,7 +50,7 @@
     <div class="projectcontainer">
 
       <div class="text">
-        <span data-projectid="mashup1">&lt;prototype id="<span class="p5">p5</span> <span class="ps">photoshop</span> <span class="dh">museumStudies</span> <span class="js">js</span> <span class="js">ajax</span> <span class="js">php</span>" date="october2020"/&gt;</span>
+        <span data-projectid="mashup1">&lt;prototype id="<span class="p5">p5</span> <span class="ps">photoshop</span> <span class="dh">museumStudies</span> <span class="js">js</span> <span class="js">ajax</span> <span class="js">php</span>" date="october-december2020"/&gt;</span>
       </div>
 
       <video autoplay muted loop playsinline src="mashupvid.mov">
@@ -61,77 +61,50 @@
       <a class="extlink" href="https://github.com/sashasolovyeva/Mashup_v2_backend" target="_blank">github &gt;</a>
 
       <div class="text">
-        <span class="smallerh">documentation</span>
-        <h4>Idea:</h4>
-        <p>The experience allows the user to mash pieces of the 20th century's most famous artworks together and create collages that can be saved.
-					There are two possible approaches: educational and inspiration-searching.</p>
-				<p>Educationally, the user is encouraged to critically think about the artwork they are modifying and infer the
-					meaning artists put into creation of their art objects. There is a "Learn and Get Inspired" tab that
-					gives a context on the time the artists lived and their place of origin; each artist's
-					profile is linked to their corresponding page on the MoMA website.</p>
+        <h4>The problem</h4>
+        <p>How to make modern art seem less impalpable and artworks more memorable?
+					As museums struggle to attract new audiences, there is a need for educational tools that reimagine how an artwork
+					is presented and let the users develop individual relationships with monumental art. At the same time,
+					these tools need to serve educational value, informing one’s understanding of modern art or a particular artist’s style or biography.
+				</p>
 
-				<p>For all those who are searching for inspiration, this is a perfect opportunity to experimentally mash different styles,
-				colors and patterns for unexpected discoveries. Looking for the juxtapositions to form dynamically?
-				Animate your canvas (and stop them at any point) for more unexpected contrasts and encounters.</p>
-
-        <h4>Justification:</h4>
-        <p>This project builds on an idea of natural learning happening through rapid juxtapositions
-        of our old and new knowledge, as well as stark contrasts or notable similarities between seemingly
-        unrelated pieces of art. The interface presents a unique opportunity for the user to interactively
-        compare, contrast, juxtapose, and see how collisions of different styles and ideas give birth to new ways of seeing.
+        <h4>The solution</h4>
+        <p>An experience that allows the user to put together elements of 20th-century art into a big ensemble.
+					What is the better way to visualize the similarities and differences of art in the first and second half of the century?
+					Interest someone in a particular artist through the aesthetics of their visual style?
         </p>
 
-        <h4>Technical documentation:</h4>
-        <p>The most notable technical features of the project are:</p>
-        <ul>
-          <li>An off-screen buffer for the canvas (p5.js)</li>
-					<li>Backend with PHP and AJAX to let the user save their work to the public gallery and add their name and a note about their creative process</li>
-					<li>With a base-64 conversion algorithm, a feature that lets the user upload their own image to use in a collage.</li>
-          <li>Tabbing logic (js) to navigate between different panels</li>
-          <li>A dropdown filter that controls which assets get generated for each artist (js)</li>
-          <li>An onclick function allowing to choose an asset and make it appear on the canvas
-          based on the mouse position (js + p5.js)</li>
-          <li>HTML buttons with event handlers to let the user modify the objects or canvas in various ways
-          </li>
-          <li>A Backgrounds panel that sets a canvas background with a p5.js background() function</li>
-        </ul>
+        <h4>The findings</h4>
+				<p>
+					Having started as a purely educational tool, “Mash-Up” seems to have grown into something that can be used for inspiration-searching.
+					Pinterest mood board-style, many people have been finding aesthetics of incompatible and unobvious visual solutions through how
+					collage elements were arranged, as well as new objects they formed.
+				</p>
 
-				<h4>More on back-end:</h4>
-				<p>To encourage people to share their discoveries while collaging and compile creative work into a
-					gallery, I have added a server-side component to this project! If the user clicks on
-					"save to our library to share with others!", they are prompted to input their name and a comment.
-					All of this data then gets packages into a JSON file which is parsed on an imagegallery.php page
-					into a full-fledged gallery: (<a href="https://i6.cims.nyu.edu/~as11303/webdev/finalproject/imagegallery.php">x</a>)
+				<h4>The process</h4>
+				<ol>
+					<li>Choosing 20th century artists whose works have enough similarities and differences for new discoveries by a user.
+						<div class="fiveimgscontainer">
+							<img src="malevich.jpg" alt="Malevich painting">
+							<img src="mondrian.jpg" alt="Mondrian painting">
+							<img src="haring.jpg" alt="Haring painting">
+							<img src="miro.jpg" alt="Miro painting">
+							<img src="kupka.jpg" alt="Kupka painting">
+						</div>
+					</li>
+					<li><div class="singleimagecontainer">Prototyping the interface.
+						After originally trying to add three columns to let the user see the reference and collage elements at the same time, I have decided to go for a tabbing structure with the “Art elements” and “Learn and get inspired” panels.
 
-        <h4>Further development:</h4>
-        <p>The possibilities of development of this interface are endless!
-        Here is a number of ways the project can grow in the future:</p>
-        <ul>
-          <li>Letting the user upload their own image to use as a collage background, as well
-          as letting them choose a solid color. (done!)</li>
-          <li>Letting the user rotate the objects after putting them on the canvas.</li>
-          <li>Letting the user create custom animations / choose between different modes of animation (e.g. random movement,
-          Perlin noise movement, rotation, collision detection, etc.)</li>
-          <li>Creating a better user interface to easier move and edit objects, especially to resize them.</li>
-          <li>Allowing the user to take notes on their findings during the creative process.</li>
-          <li>Adding icons (instead of just a regular cursor) when the user goes into a Move, Edit or Remove modes.</li>
-        </ul>
+						<img src="screen-mockup.png" alt="Original screen mockup">
 
-        <h4>User manual:</h4>
-        <p>Compare, contrast, juxtapose, and see how collisions of different styles and ideas give birth to
-        new ways of seeing and approaches, to both a master's artwork and your own creative process.
-        Choose an artist from a dropdown menu and click anywhere on the canvas to use pieces of their famous
-        art for your collage! (do not drag and drop)</p>
-        <p>Select Move to relocate any of the objects around the canvas.</p>
-        <p>Select Edit to change width and height of any object.
-        After pressing the Edit button, click on an object that you want to resize
-        and use sliders to adjust width and height separately.</p>
-        <p>Select Animate to make your sketch come to live! This exciting feature
-        allows you to put all of your objects into motion. Be careful with this feature though:
-        the original positions of your objects with not be stored.</p>
-        <p>Select Remove and click on an object that you want to delete from your canvas.</p>
-        <p>Select Clear to start from scratch.</p>
-        <p>Finally, select Save to download your (static) collage as a .png file.</p>
+					</div></li>
+					<li>Based on the user feedback, I later decided to add a Backgrounds tab that would let them choose from multiple simple backgrounds to have a more cohesive look to the collages.</li>
+					<li>I later upgraded the background feature to let the user upload their own image to collage upon, as I received the feedback that it would be easier to relate art pieces to personal context and see their real-world applicability if users could upload their one photographs or pop-culture images.</li>
+					<li>Coding in the “Animate” feature that adds movement to collage elements and expands on the project’s philosophy of rapid juxtapositions because the elements start forming new compositions and coming in contact with one another. After the UX research, I also added a warning before the animation button is pressed that the collage’s current state will be altered.</li>
+					<li>Adding a public image gallery via server-side technologies such as AJAX and PHP. The gallery was ideated as a space for users to share their works and findings, and learn and get inspired from one another.</li>
+				</ol>
+
+
       </div>
 
     </div>
