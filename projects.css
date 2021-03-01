@@ -155,7 +155,7 @@ a:hover {
 }
 
 h4 {
-  margin: 2vh 0;
+  margin: 5.5vh 0 2vh 0;
 }
 
 .text {
@@ -210,7 +210,7 @@ p, ul, li {
 }
 
 ol li {
-	padding-bottom: 5%;
+	padding-bottom: 3%;
 }
 
 .fiveimgscontainer {

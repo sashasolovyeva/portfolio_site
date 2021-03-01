@@ -57,17 +57,42 @@
       </video>
 
       <div class="text">
-        <span class="smallerh">documentation</span>
 
         <p>I thought that
           <a href="https://www.youtube.com/watch?v=_EtlJCfaxdc&ab_channel=ConceptualAcademy" target="_blank" class="periwinkle">
-          the Hertzsprung-Russell diagram</a> was pretty fascinating!
-           You know, a quick handy chart that denotes a life cycle of every star from
-           Sirius to the Alpha Centauri.</p> <p>Wondering what will happen to our own Sun when the fusion stops
-           and into explodes into a Red Giant? Will it ever become a Black Hole? Why or why not?
+          the Hertzsprung-Russell diagram</a>, a chart that denotes a life cycle of every star from
+				 Sirius to the Alpha Centauri is pretty fascinating!</p>
+				 <p>Wondering what will happen to our own Sun when the fusion stops
+           and it explodes into a Red Giant? Will it ever become a Black Hole? Why or why not?
            This animated interactive experience will answer these questions and, hopefully, make you as obsessed
            with stellar life cycles as I am.
         </p>
+
+				<h4>The problem</h4>
+				<p>How to easily explain a complex scientific graph? Moreover, how to make a diagram easy to use by non-specialists?</p>
+
+				<h4>The solution</h4>
+				<p>The data visualization that:</p>
+				<ol type="a">
+					<li>facilitates everyday usage of the Hertzsprung-Russell diagram
+						as the user can hover over data points to see their temperature and luminosity,
+						and understand which stars fall into which categories.
+						The inspiration was largely drawn from Wolfram Alpha’s graphing interfaces for mathematics and science.
+					</li>
+					<li>shows an animated "story" of high- and low-mass stars that makes it easy to visualize and revise basic information about stars’ lifespans in reference to the diagram.
+					</li>
+				</ol>
+
+				<h4>The process</h4>
+				<ol>
+					<li>Working through the possibilities of storytelling behind the diagram, i.e. choosing which stars’ lifespans to animate (settled on one example for a low-mass and one example for a high-mass star).</li>
+					<li>Prototyping the interface, deciding to separate diagram usage mode from the learning mode.</li>
+					<li>Getting the data from Strasbourg’s University astrophysics database VizieR, cleaning it, attempting to parse directly into a Processing sketch. Modifying the approach because the dispersion of values was not conducive to showcasing the diagram’s purpose.</li>
+					<li>Choosing the color palette for visualization, appropriate graphics (paralleling the aesthetics of Suprematism), and implementing red visual guides for UX improvements.</li>
+					<li>Implementing the Object-Oriented Java structure with a Star superclass and Red Giants and White Dwarfs classes inheriting from it.</li>
+					<li>Pulling the definitions of terminology from NASA’s Hubblesite Glossary API.</li>
+					<li>Creating Processing-based animation to visualize stars’ metamorphosis.</li>
+				</ol>
 
       </div>
 
