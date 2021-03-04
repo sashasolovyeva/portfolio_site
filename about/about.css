@@ -23,8 +23,8 @@ body {
 
 .contactinfo {
 	position: absolute;
-	bottom: calc(.5vh + 2px);
-	right: 1vh;
+	bottom: calc(4% + 2px);
+	right: 4%;
 }
 
 .contactinfo a, .contactinfo span {
@@ -38,5 +38,9 @@ body {
 }
 
 .klepa {
-	display: block;
+	position: absolute;
+	right: 3%;
+	bottom: -1%;
+	padding: 0;
+	max-width: 30%;
 }

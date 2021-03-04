@@ -134,8 +134,19 @@ iframe {
   clear: both;
 }
 
+.doubleextlink {
+	float: right;
+	display: block;
+	clear: both;
+	font-size: 4vh;
+}
 
-.extlink::after {
+.doubleextlink a {
+	color: magenta;
+}
+
+
+.extlink::after, .doubleextlink::after {
   clear: both;
 }
 
@@ -230,6 +241,24 @@ ol li {
 .singleimagecontainer img {
 	width: 50%;
 	display: block;
+}
+
+/* .horizontalline {
+	border: none;
+	height: 5vh;
+	display: block;
+	position: absolute;
+	z-index: 1000;
+    border-bottom: 3px solid black;
+} */
+
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 100%;
+  background-color:#BCC4DB;
+  height: 2px;
 }
 
 .ps {
