@@ -36,6 +36,10 @@ a {
 	z-index: 2;
 }
 
+.namecontainer {
+	width: 80%;
+}
+
 
 .descr {
 	width: 80%;
