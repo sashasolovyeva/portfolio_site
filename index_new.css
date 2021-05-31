@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/ron3wep.css");
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Karla";
+	font-weight: 400;
+	font-style: normal;
+	font-size: 4vh;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: visible;
+	height: 100vh;
+	scroll-behavior: smooth;
+}
+
+
+a {
+	cursor: pointer;
+}
+
+.heading {
+	font-size: 6vh;
+}
+
+.name {
+	color: magenta;
+}
+
+.container {
+	padding: 2% 5%;
+	z-index: 2;
+}
+
+
+.descr {
+	width: 80%;
+	line-height: 130%;
+}
+
+.antiqua {
+	font-family: century-old-style-std, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3vh;
+	color: #BCC4DB;
+}
+
+.antiqua_prjtitle {
+	font-family: century-old-style-std, serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.projectlist {
+	position: fixed;
+	bottom: 0;
+}
+
+.projectlist a {
+	color: black;
+	display: block;
+	text-decoration: none;
+	padding: .4% 0;
+}
+
+
+.scroll {
+	overflow-x: visible;
+	overflow-y: hidden;
+	position: fixed;
+  top: 0;
+  left: 0;
+	z-index: 1;
+	margin-bottom: 1%;
+}
+
+.innerscroll {
+	display: flex;
+	margin-left: 80vw;
+}
+
+.projectscroll {
+	width: 70vw;
+	margin-right: 25vw;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	max-height: 55vh;
+}
+
+.projectscroll .mockuppic {
+	width: 60%;
+	height: auto;
+}
+
+.projectscroll .mockuppic img {
+	height: 100%;
+	width: auto;
+}
+
+.projectscroll .projecttext {
+	text-align: right;
+	font-size: 3vh;
+	z-index: 1;
+	width: 30%;
+}
+
+.projecttext a {
+	color: black;
+	text-decoration: none;
+}
+
+/* ANIMATION AND ABSOLUTELY POSITIONED IMAGES */
+.mashup_masters1 {
+	animation: chaoticmovement1 8s infinite linear;
+	position: absolute;
+}
+
+.mashup_masters2 {
+	animation: chaoticmovement2 7s infinite linear;
+	position: absolute;
+}
+
+.mashup_masters3 {
+	animation: chaoticmovement3 6s infinite linear reverse;
+	position: absolute;
+}
+
+@keyframes chaoticmovement1 {
+	0% {right: -5%; bottom: 20%;}
+	25% {right: 25%; bottom: 70%;}
+	50% {right: 80%; bottom: 30%;}
+	75% {right: 50%; bottom: -10%;}
+	100% {right: 0%; bottom: 20%;}
+}
+
+@keyframes chaoticmovement2 {
+	0% {right: 90%; bottom: 60%;}
+	25% {right: 75%; bottom: -15%;}
+	50% {right: -5%; bottom: 20%;}
+	75% {right: 40%; bottom: 70%;}
+	100% {right: 90%; bottom: 60%;}
+}
+
+@keyframes chaoticmovement3 {
+	0% {right: 45%; bottom: -10%;}
+	25% {right: -5%; bottom: 45%;}
+	50% {right: 40%; bottom: 85%;}
+	75% {right: 85%; bottom: 50%;}
+	100% {right: 45%; bottom: -10%;}
+}
+
+.prjsmallimage {
+	z-index: -1;
+	position: absolute;
+	left: 60%;
+	top: 30%;
+	opacity: 70%;
+
+}
+
+#lablogo {
+	opacity: 70%;
+}
