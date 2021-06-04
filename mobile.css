@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 body {
-  max-width: 100vw;
   font-size: 2.2vh;
 }
 
@@ -9,14 +8,11 @@ section {
   /* flex-direction: column; */
 }
 
-.container {
-  padding: .5vh 1vh;
-}
-
 .heading, .name {
   font-size: 4vh;
 }
 
+/* from about/index.html */
 .link {
   position: static;
   font-size: 3vh;
@@ -29,24 +25,11 @@ section {
 }
 
 .descr {
-  font-size: 2.2vh;
   max-width: 46vw;
 }
 
 #descriptionofme {
   width: 46vw;
-}
-
-.antiqua {
-  font-size: 2.2vh;
-}
-
-.hiddenproject {
-  font-size: 2.2vh;
-}
-
-.worktype_descr {
-  /* padding: 1vh 0; */
 }
 
 .klepa {

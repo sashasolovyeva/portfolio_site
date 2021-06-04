@@ -1,15 +1,11 @@
 @charset "UTF-8";
 
-.heading {
-  font-size: 5vh;
-}
-
 body {
   font-size: 2.5vh;
 }
 
-.container {
-  padding: 1vh 2vw;
+.heading {
+  font-size: 5vh;
 }
 
 .link {
@@ -19,11 +15,7 @@ body {
   display: block;
 }
 
-.descr {
-  font-size: 2.5vh;
-  line-height: 140%;
-}
-
+/* from about/index.html */
 #descriptionofme {
   width: 46vw;
 }
@@ -33,13 +25,72 @@ body {
   top: 2%;
   margin: 0;
   font-size: 5vh;
-  /* change */
 }
 
 .klepa {
   max-width: 25vw;
 }
 
-.project-name {
+/* font size overrides */
+.antiqua {
+  font-size: 2.2vh;
+}
 
+.projectlist a {
+  font-size: 2.2vh;
+}
+
+.projectscroll .projecttext {
+  font-size: 2.2vh;
+  width: 100%;
+  text-align: center;
+}
+
+/* project list override */
+.projectlist {
+  bottom: 2%;
+}
+
+/* scroll container overrides */
+.projectscroll {
+  flex-direction: column;
+  height: 65vh;
+}
+
+.projectscroll .mockuppic {
+  width: 100%;
+}
+
+/* scroll container images overrides */
+.prjsmallimage {
+  left: 90%;
+	top: 35%;
+  width: 40%;
+}
+
+#creationofadam .prjsmallimage {
+  left: 50%;
+  top: 60%;
+  width: 80%;
+  transform: translateX(-50%);
+}
+
+#rijksthumbnail {
+  width: 60%;
+  margin-top: 5%;
+}
+
+#bikehamster {
+  width: 20%;
+  top: 0;
+}
+
+#box {
+  width: 20%;
+  right: 0;
+}
+
+#rotatestar {
+  width: 50%;
+  top: 50%;
 }

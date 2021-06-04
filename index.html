@@ -15,267 +15,176 @@
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="stylesheet" media="only screen and (max-width: 1200px)" type="text/css" href="tablet.css">
 	<link rel="stylesheet" media="only screen and (max-width: 600px)" type="text/css" href="mobile.css">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+	<!--  jInvertScroll Js -->
+	<script src="jInvertScroll-master/src/jquery.jInvertScroll.js"></script>
 </head>
 
 <body>
 	<div class="main">
-			<section>
-				<!-- 1 _________________________________________________________________________________________________________________________________________ -->
-				<div class="container">
+			<!-- <section> -->
+				<div class="container namecontainer">
 					<span class="name heading">sasha solovyeva</span>
-					<a class="link" id="homelink">&lt;home/&gt;</a>
-					<!-- <span class="antiqua transcription">[sah-sha suh-la-v-yoh-vah]</span> -->
-					<p class="descr projectlist" id="descriptionofme">is a digital media maker who balances her career
-					in creative coding and web dev
-					with passions for journalism, math, and astrophysics.
-					</p>
+					<span class="descr">is a digital media maker who balances her career
+					in creative coding, design, and web development
+					with passions for journalism, math, and astrophysics.</span>
 
-					<a class="link activelink" id="projectlink">&lt;home/&gt;</a>
-					<a href="about" class="link" id="aboutlink">&lt;about/&gt;</a>
-
-					<div class="hiddenelement hide" data-id="dighum">
-						<p class="descr worktype_descr" id="cont1descr"> interdiscipinary work in visual journalism, field research
-							and creative writing that makes me uniquely qualified to bridge the gap
-							between technical, creative and academic.
-						</p>
-					</div>
-
-					<img src="projects/slide3.gif" id="bikehamster" width="150" height="auto" class="hiddenproject hide" data-projectid="bike">
-					<img src="projects/milkmaid.png" alt="milkmaid" width="300" height="auto" class="hiddenproject hide" data-projectid="rijks">
-					<img src="projects/cursor.png" id="cursor" width="25" height="auto" class="hiddenproject hide" data-projectid="rijks">
-					<img src="projects/hrdiagram.png" id="stars" alt="stars graph" width="470" height="auto" class="hiddenproject hide" data-projectid="hrdiagram">
-					<img src="projects/miro1.png" class="mashup_masters1 hiddenproject hide" alt="miro eye" width="200" height="auto" data-projectid="mashup1">
-					<img src="projects/haring0.png" class="mashup_masters2 hiddenproject hide" alt="haring" width="150" height="auto" data-projectid="mashup1">
-					<img src="projects/kupka3.png" class="mashup_masters3 hiddenproject hide" alt="kupka" width="200" height="auto" data-projectid="mashup1">
-					<img src="projects/sao.png" alt="observatory tower" width="400" height="auto" class="hiddenproject hide" data-projectid="sao">
-					<img src="projects/piano_main.png" id="piano" alt="piano keyboard" width="400" height="auto" class="hiddenproject hide" data-projectid="piano">
-					<img src="projects/piano1.png" id="star_piano1" alt="red star" width="70" height="auto" class="hiddenproject hide" data-projectid="piano">
-					<img src="projects/piano2.png" id="star_piano2" alt="light blue star" width="120" height="auto" class="hiddenproject hide" data-projectid="piano">
-					<img src="projects/piano3.png" id="star_piano3" alt="dark blue star" width="160" height="auto" class="hiddenproject hide" data-projectid="piano">
-					<img src="projects/mendl1.png" id="box" alt="meindl box" width="150" height="auto" class="hiddenproject hide" data-projectid="grandb">
-					<img src="projects/adam.jpg" alt="creation of adam" width="400" height="auto" class="hiddenproject hide" data-projectid="creation">
-
-					<div class="hiddenelement hide contnarrowed" data-id="webdev">
-
-						<span class="hiddenproject hide" data-projectid="mashup2">&lt;prototype id="<span class="p5">p5</span> <span class="ps">photoshop</span> <span class="dh">museumStudies</span> <span class="js">js</span> <span class="js">ajax</span> <span class="js">php</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="harlem">&lt;website id="<span class="ps">photoshop</span> <span class="js">html</span> <span class="js">css</span> <span class="js">jQuery</span> <span class="ps">premiere</span> <span class="ps">audition</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="labsite">&lt;website id="<span class="ps">illustrator</span> <span class="js">html</span> <span class="js">css</span> <span class="js">js</span>"/&gt;</span>
-					</div>
 				</div>
 
-				<!-- 2 _________________________________________________________________________________________________________________________________________ -->
+				<div class="container projectlist">
+					<!-- <div class="projectlist"> -->
+						<a class="project" data-projectid="mashup"><span class="antiqua">(1)</span> mash up like the masters</a>
+						<a class="project" data-projectid="hrdiagram"><span class="antiqua">(2)</span> a star's life</a>
+						<a class="project" data-projectid="augmentation"><span class="antiqua">(3)</span> virtual museum: an honors thesis</a>
+						<a class="project" data-projectid="labsite"><span class="antiqua">(4)</span> MCC MediaLab websites</a>
+						<a class="project" data-projectid="creation"><span class="antiqua">(5)</span> creation of Adam</a>
+						<a class="project" data-projectid="creativecode"><span class="antiqua">&gt;</span> creative coding featurettes</a>
+						<!-- <a class="project" data-projectid="dighum"><span class="antiqua">&gt;</span> digital humanities featurettes</a> -->
 
-				<div class="container">
-					<a class="heading" data-id="webdev"><span class="hide">&lt;</span> web development <span>&gt;</span></a>
-					<div class="projectlist hide">
-						<a class="project" href="mashup" data-projectid="mashup2"><span class="antiqua">(1)</span> mash up like the masters <span class="prjarrow">&gt;</span></a>
-						<a class="project" href="medialab" data-projectid="labsite"><span class="antiqua">(2)</span> MCC MediaLab websites <span class="prjarrow">&gt;</span></a>
-						<a class="project" href="immobility" data-projectid="harlem"><span class="antiqua">(3)</span> (im)mobility in Harlem <span class="prjarrow">&gt;</span></a>
-					</div>
 
-					<div class="hiddenelement hide" data-id="crcode">
-						<p class="descr worktype_descr" id="cont2descr">visual projects exploring ways of applying interactivity to popularize science and
-							create aesthetically compelling storytelling.
-						</p>
-					</div>
-
-					<div class="hiddenelement hide contnarrowed" data-id="dighum">
-						<span class="hiddenproject hide" data-projectid="harlem2">&lt;website id="<span class="ps">photoshop</span> <span class="js">html/css</span> <span class="js">jQuery</span> <span class="ps">premiere</span> <span class="ps">audition</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="strand">&lt;essay id="<span class="dh">writing</span>"/&gt; </span>
-						<span class="hiddenproject hide" data-projectid="rfe">&lt;infographic id="<span class="ps">illustrator</span> <span class="dh">visualJournalism</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="manifesto">&lt;print id="<span class="ps">inDesign</span> <span class="dh">mediaStudies</span> <span class="ps">graphicDesign</span>"/&gt;</span>
-					</div>
+						<!-- <a class="project" data-projectid="rijks" href="rijks"><span class="antiqua">(3)</span> rijksmuseum artist inspirations</a>
+						<a class="project" data-projectid="sao" href="observatory"><span class="antiqua">(4)</span> southern Russia observatory experience</a>
+						<a class="project" data-projectid="bike" href="bike"><span class="antiqua">(5)</span> bike through Berlin</a>
+						<a class="project" data-projectid="piano" href="spacepiano"><span class="antiqua">(6)</span> sound of Space</a>
+						<a class="project" data-projectid="grandb" href="grandbudapest"><span class="antiqua">(7)</span> grand budapest</a>
+						<a class="project" href="manifesto" data-projectid="manifesto"><span class="antiqua">(1)</span> data manifesto</a>
+						<a class="project" href="rfe" data-projectid="rfe"><span class="antiqua">(2)</span> Radio Free Europe: politics infographics</a> -->
+					<!-- </div> -->
 				</div>
 
-				<!-- 3 _________________________________________________________________________________________________________________________________________ -->
+			<!-- </section> -->
 
-				<div class="container">
-					<a class="heading" data-id="crcode"><span class="hide">&lt;</span> creative code <span>&gt;</span></a>
-					<div class="projectlist hide">
-						<a class="project" data-projectid="hrdiagram" href="hrdiagram"><span class="antiqua">(1)</span> a star's life <span class="prjarrow">&gt;</span></a>
-						<a class="project" data-projectid="creation" href="creationofadam"><span class="antiqua">(2)</span> creation of Adam <span class="prjarrow">&gt;</span></a>
-						<a class="project" data-projectid="rijks" href="rijks"><span class="antiqua">(3)</span> rijksmuseum artist inspirations <span class="prjarrow">&gt;</span></a>
-						<a class="project" data-projectid="sao" href="observatory"><span class="antiqua">(4)</span> southern Russia observatory experience <span class="prjarrow">&gt;</span></a>
-						<a class="project" data-projectid="bike" href="bike"><span class="antiqua">(5)</span> bike through Berlin <span class="prjarrow">&gt;</span></a>
-						<a class="project" data-projectid="piano" href="spacepiano"><span class="antiqua">(6)</span> sound of Space <span class="prjarrow">&gt;</span></a>
-						<a class="project" data-projectid="grandb" href="grandbudapest"><span class="antiqua">(7)</span> grand budapest <span class="prjarrow">&gt;</span></a>
+			<div class="scroll">
+				<div class="innerscroll">
+					<div class="projectscroll" id="mashup">
+						<div class="mockuppic"><a href="mashup"><img src="projects/mashup_screen.png" alt="mash up like the masters mockup"></a></div>
+						<img src="projects/miro1.png" class="mashup_masters1" alt="miro eye" data-projectid="mashup1">
+						<img src="projects/haring0.png" class="mashup_masters2" alt="haring" data-projectid="mashup1">
+						<img src="projects/kupka3.png" class="mashup_masters3" alt="kupka" data-projectid="mashup1">
+
+						<div class="projecttext">
+							<p>a collage-making interface that explores 20th-century art through unexpected comparisons and contrasts.</p>
+							<a href="mashup">learn more &gt;</a>
+						</div>
 					</div>
 
-					<div class="hiddenelement hide" data-id="webdev">
-						<p class="descr worktype_descr">websites, interactive experiences and design work
-							made for all intents and purposes of the MCC MediaLab and personal creative ambitions.
-						</p>
+					<div class="projectscroll" id="hrdiagram">
+						<div class="mockuppic"><a href="hrdiagram"><img src="projects/starslife_screen.png" alt="star's life project mockup"></a></div>
+						<img src="projects/piano3.png" class="prjsmallimage" alt="star" width="300" height="auto">
+
+						<div class="projecttext">
+							<p>an immersive tool for learning astrophysics; <br>a visualization of a lifespan of a low-mass star like the Sun.</p>
+							<a href="hrdiagram">learn more &gt;</a>
+						</div>
 					</div>
 
-					<img src="projects/harlem.png" alt="subwaylines" class="hiddenproject hide harlem" data-projectid="harlem2">
-					<img src="projects/books.png" height="125" width="auto" alt="colorful books" class="hiddenproject hide" data-projectid="strand">
-					<img src="projects/rfe.png" height="auto" width="200" alt="inforgraphic circles" class="hiddenproject hide" data-projectid="rfe">
-					<img src="projects/datagraphic.png" height="auto" width="400" alt="data graphic" class="hiddenproject hide" data-projectid="manifesto">
-					<div id="imagediv" class="hiddenproject hide" data-projectid="labsite2"></div>
+					<div class="projectscroll" id="augmentation">
+						<div class="mockuppic"><a href="augmentation"><img src="augmentation/images/museumspace.png" alt="thesis thumbnail image"></a></div>
+						<img src="augmentation/images/constellation3.png" class="prjsmallimage" alt="constellation" width="300" height="auto">
+
+						<div class="projecttext">
+							<p>a visual culmination of a year-long research on augmented collections, contexts, juxtapositions, and cinematic montages –
+								all within the virtual realms of Rembrandt's "Night Watch".</p>
+							<a href="augmentation">learn more &gt;</a>
+						</div>
+					</div>
+
+					<div class="projectscroll" id="medialab">
+						<div class="mockuppic"><a href="medialab"><img src="projects/medialab_screen.png" alt="mcc medialab archive mockup"></a></div>
+						<img src="projects/logo.png" class="prjsmallimage" id="lablogo" alt="mcc medialab logo" width="300" height="auto">
+
+						<div class="projecttext">
+							<p>webpages I have designed, prototyped, developed and/or maintained as a lead web developer of the MediaLab Team at the department of Media, Culture, and Communications at NYU.</p>
+							<a href="medialab">learn more &gt;</a>
+						</div>
+					</div>
+
+					<div class="projectscroll" id="creationofadam">
+						<div class="mockuppic"><a href="creationofadam"><img src="projects/adam_screen.png" alt="creation of adam AR app mockup"></a></div>
+						<img src="projects/adam.jpg" class="prjsmallimage" alt="creation of adam" width="300" height="auto">
+
+						<div class="projecttext">
+							<p>an Augmented Reality app built with Unity.</p>
+							<a href="creationofadam">learn more &gt;</a>
+						</div>
+					</div>
+
+					<div class="projectscroll" id="creativecode">
+						<img src="projects/slide3.gif" class="featuretteimg" id="bikehamster" alt="hamster on a bike">
+						<div id="rijksthumbnail">
+							<img src="projects/milkmaid.png" class="featuretteimg" id="milkmaid" alt="vermeer's milkmaid">
+							<img src="projects/cursor.png" class="featuretteimg" id="cursor" alt="cursor">
+						</div>
+						<img src="projects/mendl1.png" class="featuretteimg" id="box" alt="meindl box">
+						<img src="projects/piano2.png" class="featuretteimg" id="rotatestar" alt="rotating star">
+
+						<div class="projecttext">
+							<p>sketches, games, animations, and other experiences made with Processing and p5.js.</p>
+							<a href="creativecode">learn more &gt;</a>
+						</div>
+					</div>
+
+					<!-- <div class="projectscroll" id="dighum">
+						<div class="mockuppic"><img src="projects/harlem.png" alt="mcc medialab archive mockup"></div>
+
+						<div class="projecttext">
+							<p></p>
+							<a href="#">learn more &gt;</a>
+						</div>
+					</div> -->
+
+
 				</div>
-
-				<!-- 4 _________________________________________________________________________________________________________________________________________ -->
-
-				<div class="container">
-					<a class="heading" data-id="dighum"><span class="hide">&lt;</span> web and graphic design <span>&gt;</span></a>
-					<div class="projectlist hide">
-						<a class="project" href="manifesto" data-projectid="manifesto"><span class="antiqua">(1)</span> data manifesto <span class="prjarrow">&gt;</span></a>
-						<a class="project" href="rfe" data-projectid="rfe"><span class="antiqua">(2)</span> Radio Free Europe: politics infographics <span class="prjarrow">&gt;</span></a>
-						<a class="project" href="medialab" data-projectid="labsite2"><span class="antiqua">(3)</span> MCC MediaLab websites <span class="prjarrow">&gt;</span></a>
-					</div>
-
-					<div class="hiddenelement hide" data-id="crcode">
-						<span class="hiddenproject hide" data-projectid="mashup1">&lt;prototype id="<span class="p5">p5</span> <span class="ps">photoshop</span> <span class="dh">museumStudies</span> <span class="js">js</span> <span class="js">ajax</span> <span class="js">php</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="bike">&lt;game id="<span class="p5">p5</span> <span class="gd">gamedev</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="sao">&lt;ar id="<span class="p5">a-frame</span> <span class="gd">ar</span> <span class="gd">vr</span> <span class="dh">astrophysics</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="piano">&lt;sketch id="<span class="pr">processing</span> <span class="dh">astrophysics</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="hrdiagram">&lt;sketch id="<span class="pr">processing</span> <span class="dh">astrophysics</span> <span class="js">dataviz</span> <span class="p5">animation</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="rijks">&lt;sketch id="<span class="pr">processing</span> <span class="dh">museumStudies</span> <span class="js">api</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="grandb">&lt;sketch id="<span class="pr">processing</span>"/&gt;</span>
-						<span class="hiddenproject hide" data-projectid="creation">&lt;ar id="<span class="pr">unity</span> <span class="pr">arkit</span> <span class="gd">ar</span> <span class="dh">museumStudies</span>"/&gt;</span>
-					</div>
-
-					<img src="projects/harlem.png" alt="subwaylines" class="hiddenproject hide harlem" data-projectid="harlem">
-					<img src="projects/miro1.png" class="mashup_masters1 hiddenproject hide" alt="miro eye" width="200" height="auto" data-projectid="mashup2">
-					<img src="projects/haring0.png" class="mashup_masters2 hiddenproject hide" alt="haring" width="150" height="auto" data-projectid="mashup2">
-					<img src="projects/kupka3.png" class="mashup_masters3 hiddenproject hide" alt="kupka" width="200" height="auto" data-projectid="mashup2">
-					<div id="imagediv" class="hiddenproject hide" data-projectid="labsite"></div>
-				</div>
-			</section>
+			</div>
 	</div>
 
 	<!-- SCRIPT __________________________________________________________________________________________________________________________ -->
 
 	<script>
-		let rectDivs = document.querySelectorAll(".container")
-		let projectName = document.querySelectorAll(".heading")
-		let projectLists = document.querySelectorAll(".projectlist")
-		let mainHiddenElems = document.querySelectorAll(".hiddenelement")
-		let aboutToHide = document.getElementById("aboutlink")
-		let homeToHide = document.getElementById("homelink")
-		let projectsToHide = document.getElementById("projectlink")
-
-	// 	if(window.sessionStorage.getItem("pagestate")){
-	// 	for(let i = 0; i < projectLists.length; i++){
-	// 		if(projectName[i].dataset.id === window.sessionStorage.getItem("pagestate")){
-	// 			chooseProjectCategory(projectName[i])
-	// 			homeToHide.onclick = function(event){
-	// 				homeButtonAction()
-	// 			}
-	// 		}
-	// 	}
-	// }
-
-
-		for(let i = 0; i < rectDivs.length; i++){
-
-			projectName[i].onclick = function(event){
-				ourHeading = event.currentTarget
-
-				if(ourHeading.nextElementSibling.classList.contains('hide')){
-					// LOCAL STORAGE SETTING
-					// window.sessionStorage.setItem("pagestate", ourHeading.dataset.id);
-					// CALLING THE FUNCTION
-					chooseProjectCategory(ourHeading)
-
-				// }
-			} else {
-				// sessionStorage.removeItem("pagestate");
-				homeToHide.style.display = 'none';
-				aboutToHide.style.display = 'block';
-				projectsToHide.style.display = 'block';
-				for(let i = 0; i < projectName.length; i++){
-					projectName[i].style.display = 'block';
-					if(i > 0){
-						projectLists[i].classList.add('hide')
-					} else {
-						projectLists[i].classList.remove('hide')
+		(function($) {
+		    var elem = $.jInvertScroll(['.scroll'],
+				{
+					height: 5200,
+					onScroll: function(percent){
+						// console.log(percent);
 					}
+				});
+
+		}(jQuery));
+
+		let scrollableDiv = document.querySelector('.scroll');
+		let prjNames = document.querySelectorAll('.project');
+		document.addEventListener('scroll', function(e){
+			let rect = scrollableDiv.getBoundingClientRect();
+			let scrollPos = parseInt(Math.abs((rect.left + window.innerWidth / 8) / window.innerWidth));
+			// console.log(window.scrollY);
+
+			for(let i = 0; i < prjNames.length; i++){
+				prjNames[i].style.color = 'black';
+				if(i == scrollPos){
+					prjNames[i].style.color = 'magenta';
 				}
-				// ourHeading.children[0].classList.add('hide')
-				ourHeading.children[1].classList.remove('hide')
-
-				for(let i = 0; i < mainHiddenElems.length; i++){
-						mainHiddenElems[i].classList.add('hide')
-				}
 			}
+		})
 
-			homeToHide.onclick = function(event){
-				homeButtonAction()
-			}
+		for(let i = 0; i < prjNames.length; i++){
+			prjNames[i].addEventListener('click', function(e){
+				let innerWidth = window.innerWidth;
+				let initalScroll = 550;
+				let projectScroll = 770 * i;
 
-			}
+				let calcScrollPos = initalScroll + projectScroll;
+				// console.log(calcScrollPos);
+				// console.log(window.scrollY);
+				window.scrollTo({left: 0, top: calcScrollPos, behavior: 'smooth'});
+				// console.log(scrollableDiv.getBoundingClientRect().left);
+			})
 		}
 
-		function chooseProjectCategory(target){
-			aboutToHide.style.display = 'none';
-			projectsToHide.style.display = 'none';
-			homeToHide.style.display = 'block';
 
-			for(let m = 0; m < projectName.length; m++){
-				projectName[m].style.display = 'none';
-				projectLists[m].classList.add('hide')
-			}
-			target.style.display = 'block';
-			target.nextElementSibling.classList.remove('hide')
-
-			// HEADING ARROW
-			// target.children[0].classList.remove('hide')
-			target.children[1].classList.add('hide')
-
-			for(let n = 0; n < mainHiddenElems.length; n++){
-				if(mainHiddenElems[n].dataset.id == target.dataset.id){
-					mainHiddenElems[n].classList.remove('hide')
-
-					let visiblePrjSpan = target.nextElementSibling.querySelectorAll('.project')
-					let hiddenPrjSpan = document.querySelectorAll('.hiddenproject')
-					for(let k = 0; k < visiblePrjSpan.length; k++){
-
-						if (!window.matchMedia("(hover: none)").matches) {
-
-						visiblePrjSpan[k].onmouseover = function(event){
-							// homeToHide.style.display = 'none';
-
-							for(let j = 0; j < hiddenPrjSpan.length; j++){
-								console.log(hiddenPrjSpan[j])
-								if(hiddenPrjSpan[j].dataset.projectid == visiblePrjSpan[k].dataset.projectid){
-									hiddenPrjSpan[j].classList.remove('hide')
-								}
-							}
-						}
-						// hide
-						visiblePrjSpan[k].onmouseout = function(event){
-							// homeToHide.style.display = 'block';
-							for(let j = 0; j < hiddenPrjSpan.length; j++){
-									hiddenPrjSpan[j].classList.add('hide')
-							}
-						}
-					}
-					}
-				}
-			}
-		}
-
-		function homeButtonAction(){
-			// window.sessionStorage.removeItem("pagestate");
-			homeToHide.style.display = 'none';
-			aboutToHide.style.display = 'block';
-			projectsToHide.style.display = 'block';
-			for(let i = 0; i < projectName.length; i++){
-				projectName[i].style.display = 'block';
-				if(i > 0){
-					projectLists[i].classList.add('hide')
-					projectName[i].children[0].classList.add('hide')
-					projectName[i].children[1].classList.remove('hide')
-				} else {
-					projectLists[i].classList.remove('hide')
-				}
-			}
-
-			for(let i = 0; i < mainHiddenElems.length; i++){
-					mainHiddenElems[i].classList.add('hide')
-			}
-		}
 
 	</script>
 
