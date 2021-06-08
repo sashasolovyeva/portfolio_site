@@ -22,9 +22,9 @@
 	<!--  jInvertScroll Js -->
 	<script src="scripts/jInvertScroll-master/src/jquery.jInvertScroll.js"></script>
 	<script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-	<script>
+	<!-- <script>
 		smoothscroll.polyfill();
-	</script>
+	</script> -->
 </head>
 
 <body>
@@ -43,8 +43,8 @@
 						<a class="project" data-projectid="mashup"><span class="antiqua">(1)</span> mash up like the masters</a>
 						<a class="project" data-projectid="hrdiagram"><span class="antiqua">(2)</span> a star's life</a>
 						<a class="project" data-projectid="augmentation"><span class="antiqua">(3)</span> virtual museum: an honors thesis</a>
-						<a class="project" data-projectid="labsite"><span class="antiqua">(4)</span> MCC MediaLab websites</a>
-						<a class="project" data-projectid="creation"><span class="antiqua">(5)</span> creation of Adam</a>
+						<a class="project" data-projectid="medialab"><span class="antiqua">(4)</span> MCC MediaLab websites</a>
+						<a class="project" data-projectid="creationofadam"><span class="antiqua">(5)</span> creation of Adam</a>
 						<a class="project" data-projectid="creativecode"><span class="antiqua">&gt;</span> creative coding featurettes</a>
 						<!-- <a class="project" data-projectid="dighum"><span class="antiqua">&gt;</span> digital humanities featurettes</a> -->
 
@@ -153,18 +153,31 @@
 				{
 					height: 5200,
 					onScroll: function(percent){
-						// console.log(percent);
+						console.log(percent);
 					}
 				});
 
+				$(window).on('beforeunload', function() {
+		    	$(window).scrollTop(0);
+				});
+
+				// $(window).on('scroll', function(){
+  			// 	let s = $(window).scrollTop(),
+      	// 	d = $(document).height(),
+      	// 	c = $(window).height();
+				//
+  			// 	var scrollPercent = (s / (d - c)) * 100;
+  			// 	console.log(scrollPercent);
+				// })
+
 		}(jQuery));
+
 
 		let scrollableDiv = document.querySelector('.scroll');
 		let prjNames = document.querySelectorAll('.project');
 		document.addEventListener('scroll', function(e){
 			let rect = scrollableDiv.getBoundingClientRect();
 			let scrollPos = parseInt(Math.abs((rect.left + window.innerWidth / 8) / window.innerWidth));
-			// console.log(window.scrollY);
 
 			for(let i = 0; i < prjNames.length; i++){
 				prjNames[i].style.color = 'black';
@@ -173,21 +186,24 @@
 				}
 			}
 		})
+
 		for(let i = 0; i < prjNames.length; i++){
 			prjNames[i].addEventListener('click', function(e){
-				let innerWidth = window.innerWidth;
-				let initalScroll = 550;
-				let projectScroll = 770 * i;
 
-				let calcScrollPos = initalScroll + projectScroll;
+				let s = $(window).scrollTop(),
+				d = $(document).height(),
+				c = $(window).height();
+
+				let initialScroll = (d - c) * .12;
+				let projectScroll = (d - c) * .173 * i;
+
+				console.log(initialScroll, projectScroll)
+
+				let calcScrollPos = initialScroll + projectScroll;
 				// console.log(calcScrollPos);
-				// console.log(window.scrollY);
 				window.scrollTo({left: 0, top: calcScrollPos, behavior: 'smooth'});
-				// console.log(scrollableDiv.getBoundingClientRect().left);
 			})
 		}
-
-
 
 	</script>
 
