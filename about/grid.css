@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url("https://use.typekit.net/ron3wep.css");
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #BCC4DB;
+	height: 100vh;
+	width: 100%;
+	font-family: "Karla";
+	font-weight: 400;
+	font-style: normal;
+	font-size: 4vh;
+	margin: 0;
+}
+
+.main {
+	height: 100vh;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+}
+
+.heading, .name {
+	font-size: 6vh;
+	font-weight: 400;
+	color: white;
+}
+
+.heading:hover {
+	text-decoration: none;
+}
+
+
+.link {
+	position: absolute;
+	bottom: calc(4% + 2px);
+	right: 4%;
+}
+
+.transcription {
+	display: block;
+	opacity: .5;
+	color: black;
+	margin-bottom: 2vh;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container {
+	width: 50%;
+	height: 50vh;
+	border: solid 2px;
+	padding: 1.5% 2.5%;
+	overflow: hidden;
+	position: relative;
+}
+
+section a:hover {
+	text-decoration: underline;
+}
+
+.descr {
+	max-width: 40vw;
+	line-height: 130%;
+	padding: 0;
+	margin: 0;
+}
+
+.antiqua {
+	font-family: century-old-style-std, serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 3vh;
+}
+
+.contactinfo {
+	position: absolute;
+	bottom: calc(4% + 2px);
+	right: 4%;
+}
+
+.contactinfo a, .contactinfo span {
+	display: block;
+	text-align: right;
+}
+
+
+.klepa {
+	position: absolute;
+	right: 3%;
+	bottom: -1%;
+	padding: 0;
+	width: 30%;
+}
+
+@media only screen and (max-width:1200px) {
+	.klepa {
+		max-width: 60%;
+	}
+}

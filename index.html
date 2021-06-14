@@ -35,7 +35,7 @@
 					<span class="descr">is a digital media maker who balances her career
 					in creative coding, design, and web development
 					with passions for journalism, math, and astrophysics.</span>
-
+					<a href="about" id="aboutlink" class="periwinkle smallfont"> &lt;about/&gt; </a>
 				</div>
 
 				<div class="container projectlist">
@@ -157,7 +157,7 @@
 					}
 				});
 
-				$(window).on('beforeunload', function() {
+				$(window).on('unload', function() {
 		    	$(window).scrollTop(0);
 				});
 

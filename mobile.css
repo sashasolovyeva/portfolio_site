@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  font-size: 2.2vh;
+  font-size: 2.5vh;
 }
 
 section {
@@ -14,28 +14,30 @@ section {
 
 /* from about/index.html */
 .link {
-  position: static;
-  font-size: 3vh;
+  position: absolute;
+  font-size: 1em;
   margin: 1vh 0;
   display: block;
 }
 
-#homelink {
-  font-size: 3vh;
+
+.klepa {
+  width: auto;
+  height: 95%;
+}
+
+/* grid adjustments */
+
+section {
+  flex-direction: column;
+}
+
+section .container {
+  width: 100%;
+  border: solid 1px;
+  height: 25vh;
 }
 
 .descr {
-  max-width: 46vw;
-}
-
-#descriptionofme {
-  width: 46vw;
-}
-
-.klepa {
-  max-width: 45vw;
-}
-
-.contactinfo a, .contactinfo span {
-  font-size: 2.2vh;
+  max-width: 90vw;
 }

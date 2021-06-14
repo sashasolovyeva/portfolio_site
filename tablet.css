@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  font-size: 2.5vh;
+  font-size: 3vh;
 }
 
 .heading {
@@ -13,22 +13,6 @@ body {
   font-size: 3vh;
   margin: 1vh 0;
   display: block;
-}
-
-/* from about/index.html */
-#descriptionofme {
-  width: 46vw;
-}
-
-#homelink {
-  position: absolute;
-  top: 2%;
-  margin: 0;
-  font-size: 5vh;
-}
-
-.klepa {
-  max-width: 25vw;
 }
 
 /* font size overrides */
@@ -44,6 +28,10 @@ body {
   font-size: 2.2vh;
   width: 100%;
   text-align: center;
+}
+
+.smallfont {
+  font-size: 2.2vh;
 }
 
 /* project list override */
@@ -98,6 +86,10 @@ body {
 #rotatestar {
   width: 50%;
   top: 50%;
+}
+
+.klepa {
+  width: 50%;
 }
 
 @media only screen and (orientation: landscape){
