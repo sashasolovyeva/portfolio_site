@@ -90,6 +90,7 @@ body {
 
 .klepa {
   width: 50%;
+  max-width: 60%;
 }
 
 @media only screen and (orientation: landscape){

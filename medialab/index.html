@@ -20,8 +20,8 @@
     </div>
     <div class="topnames">
       <div class="lefttop">
-			     <a href="../index.html" class="name">sasha solovyeva</a>
-           <a href="../index.html" class="link" id="homelink">&lt;home/&gt;</a>
+			     <a href="../" class="name">sasha solovyeva</a>
+           <a href="../" class="link" id="homelink">&lt;home/&gt;</a>
       </div>
 
 			<div class="otherprojectlinks">
@@ -57,6 +57,7 @@
 				<p>
 					As a lead web developer of the MCC MediaLab Team in NYU Steinhardt, my responsibilities included coming up with new webpage formats, weekly web maintenance,
 					ensuring compability of new webpages with the site's architecture, UX assessments, and accessibility check for WCAG compliance.
+					Scroll to read about the archive and other projects I created ith my teammates.
 				</p>
 
 			</div>
@@ -66,15 +67,108 @@
 
 			<div class="text">
 				<p>
-					Designed, prototyped and developed by me, this page serves as an archive for the amazing
-					digital work by students across our department. I have created a JavaScript-based filtering system that
-					helps the user easily find a project based on a media type and a course it belongs to.
-				</p>
+					Designed, prototyped, and developed by me, the MediaLab Archive hosts amazing
+					digital work by students across our department.
+					Taking initiative of reviving this format after our annual <a href="http://www.composingdigitalmedia.org/mcc_media_lab/mediaWorks/" target="_blank">
+					mediaWorks_</a> showcase got canceled, I was presented with a unique challenge of preserving foundations of the Lab's brand while
+					pioneering a new format and visual aesthetic.
 
+					<h4>Creative considerations</h4>
+					<p>It was important to establish continuity with the main website's look and feel to
+					communicate our missions of openness and accessibility. At the same time, to increase the archive's popularity as an inspiration tool
+					and spark our students' imagination, I worked on a new experiential strategy.</p>
+
+					<h4>The format</h4>
+					<p>When choosing the form of presenting students' work, the following factors had to be considered:</p>
+						<ul>
+							<li>The number of projects (we knew that we would have to build the initial version with a few projects until we got more submissions)</li>
+							<li>Timeline vs. no timeline</li>
+							<li>Distribution based on a course projects were made in (this feature was later substituted with filters)</li>
+						</ul>
+					<p>Inspirations:</p>
+					<div class="multipleprojectscontainer medialabmultiple">
+						<div class="projectcontainer">
+							<img src="inspo1.png" alt="Inspiration Screenshot">
+							<p>Post-Digital Publishing Archive</p>
+						</div>
+						<div class="projectcontainer">
+							<img src="inspo2.png" alt="Inspiration Screenshot">
+							<p>The Creative Independent</p>
+						</div>
+						<div class="projectcontainer">
+							<img src="inspo3.png" alt="Inspiration Screenshot">
+							<p>Locomotive</p>
+						</div>
+						<div class="projectcontainer">
+							<img src="inspo4.png" alt="Inspiration Screenshot">
+							<p>Nymark</p>
+						</div>
+					</div>
+
+					<h4>User research</h4>
+					<p>From the UX perspective, we separated archive users into 3 categories:</p>
+					<ul>
+						<li>Those who came to find a particular project from a friend/family member.</li>
+						<li>Those who take a practice-based course in the department and came to find reference for their own projects.</li>
+						<li>Those who are getting acquainted with the Lab/the Media department, and are exploring potential creative directions.</li>
+					</ul>
+
+					<h4>The features</h4>
+					<p>It became readily apparent that for the 2nd and 3rd categories of users it was crucial to access each project quickly and
+					preview details before "commiting" to one.</p>
+					<ul>
+						<li><div class="singleimagecontainer">In desktop version, a hover interaction was added to display relevant project details.
+							<img src="archive_hover.png" alt="Archive hover interaction" class="smallimg"></div></li>
+						<li><div class="singleimagecontainer">Each project description shows up on-click (JS event listener) on the same page, helping the user avoid loading times
+							and jump between projects seemlessly.
+							<video autoplay muted loop playsinline src="archive_click.mov">
+								Your browser does not support the video tag.
+				      </video>
+						</div></li>
+					</ul>
+
+					<p>Another key addition were search filters, especially for users from 1st and 2nd categories to help them easily locate particular projects
+						(i.e., of their classmates). A JavaScript-based filtering system was developed:
+						<ul>
+							<li><div class="singleimagecontainer">
+								Filters are separated into two categories: a course where the project was made and the type of media it belongs to.
+								<img src="archive_filtercategories.png" alt="Filter categories" class="smallimg">
+							</div></li>
+
+							<li><div class="singleimagecontainer">Filters are additive – projects that belong to any of selected categories are shown,
+								rather than projects that satisfy all filters. This was done knowing that our user base needs to see projects from multiple courses at once.
+							</div></li>
+
+							<li><div class="singleimagecontainer">When a filter is selected, a small 'x' sign appears next to it which makes it easy to deselect.
+								<img src="archive_filtersexpanded.png" alt="Filters expanded" class="smallimg">
+							</div></li>
+
+							<li><div class="singleimagecontainer">The JS mechanic used to operate filters is the data- property attached to each project
+								that gets compared to a filter's class when it is clicked.
+								<img src="filters_code.png" alt="Code operating filters">
+							</div></li>
+						</ul>
+					</p>
+
+
+					<h4>Visual aesthetic</h4>
+					<p>The product's look and feel match the rest of the website but have some unique recognizable features. For example,
+					the "graph paper" background is meant to invoke thoughts about design process and prototyping. The shape of each project's
+					card is intentionally geometric and simple, and a square "shadow" resembles the Lab's logo.</p>
+
+					<p>Design iterations:</p>
+					<div class="multipleimagescontainer">
+						<div><img src="iter1.png"></div>
+						<div><img src="iter2.png"></div>
+						<div><img src="iter3.png"></div>
+					</div>
 			</div>
 
     </div>
 
+		<hr>
+
+		<p class="heading" style="text-align: center; color: black; cursor: auto;">More MediaLab work</p>
 		<div class="multipleprojectscontainer medialabmultiple">
 			<div class="projectcontainer">
 	      <a href="http://www.composingdigitalmedia.org/mcc_media_lab/" target="_blank"><img src="ml.png" alt="website screenshot"></a>
@@ -83,9 +177,11 @@
 				<div class="text">
 	        <p>
 	          A team effort of building a quick, well-designed, clean, and efficient Lab website that serves
-	          the entire MCC department. I developed index, Lab Hours, Video Tutorials, Practice Guides,
-						mediaWorks, un(making), and Archive pages, and regularly
-	          maintain the entire site.
+	          the entire MCC department. My main role in the Agile cycle was helping adapt our designers' vision into code
+						and ensuring accessibility per WCAG standards.
+						I developed index, Lab Hours, Video Tutorials, Practice Guides,
+						mediaWorks, un(making), and Archive pages and regularly
+	          maintained the entire site.
 	        </p>
 	      </div>
 

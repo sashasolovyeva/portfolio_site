@@ -23,7 +23,7 @@ section {
 
 .klepa {
   width: auto;
-  height: 95%;
+  height: 80%;
 }
 
 /* grid adjustments */
@@ -40,4 +40,8 @@ section .container {
 
 .descr {
   max-width: 90vw;
+}
+
+#container2 .descr {
+  max-width: 50%;
 }
