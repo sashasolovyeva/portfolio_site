@@ -208,6 +208,19 @@ a:hover {
 	opacity: 70%;
 }
 
+#bottomimg {
+	position: fixed;
+	bottom: 0;
+	right: 8%;
+	width: 15%;
+	height: auto;
+}
+
+#bottomimg img {
+	width: 100%;
+	height: auto;
+}
+
 @keyframes chaoticmovement1 {
 	0% {right: -5%; bottom: 20%;}
 	25% {right: 25%; bottom: 70%;}
