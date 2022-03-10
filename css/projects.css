@@ -569,6 +569,10 @@ footer svg {
 				margin-top: -4vh;
 			}
 
+			#projectcontainermarginexception {
+				margin-top: 4vh;
+			}
+
 			.multipleprojectscontainer .projectcontainer {
 				flex-direction: column;
 				margin-top: 0;
