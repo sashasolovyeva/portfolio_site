@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  font-size: 2.5vh;
+  font-size: 2.4vh;
 }
 
 section {
@@ -12,10 +12,17 @@ section {
   font-size: 4vh;
 }
 
+#aboutlink {
+  display: block;
+}
+
+.container {
+  padding: 5% 7% 0 5%;
+}
+
 /* from about/index.html */
 .link {
   position: absolute;
-  font-size: 1em;
   margin: 1vh 0;
   display: block;
 }

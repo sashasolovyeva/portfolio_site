@@ -12,9 +12,9 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" type="text/css" href="index.css">
-	<link rel="stylesheet" media="only screen and (max-width: 1200px)" type="text/css" href="tablet.css">
-	<link rel="stylesheet" media="only screen and (max-width: 600px)" type="text/css" href="mobile.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" media="only screen and (max-width: 1200px)" type="text/css" href="css/tablet.css">
+	<link rel="stylesheet" media="only screen and (max-width: 600px)" type="text/css" href="css/mobile.css">
 
 	<!-- jQuery -->
 	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
@@ -29,37 +29,25 @@
 
 <body>
 	<div class="main">
-			<!-- <section> -->
 				<div class="container namecontainer">
 					<span class="name heading">sasha solovyeva</span>
-					<span class="descr">is a product designer who balances her professional interest
-					in user-centered design principles, creative coding, and web development
-					with passions for journalism, math, and astrophysics.</span>
+					<span class="descr">is a creative technologist who balances her professional interest
+						in user-centered design principles and code
+						with passions for experimental technology, art, and astrophysics.</span>
 					<a href="about" id="aboutlink" class="periwinkle smallfont"> &lt;about/&gt; </a>
 				</div>
 
 				<div class="container projectlist">
-					<!-- <div class="projectlist"> -->
+
 						<a class="project" data-projectid="mashup"><span class="antiqua">(1)</span> mash up like the masters</a>
-						<a class="project" data-projectid="hrdiagram"><span class="antiqua">(2)</span> a star's life</a>
-						<a class="project" data-projectid="augmentation"><span class="antiqua">(3)</span> virtual museum: an honors thesis</a>
-						<a class="project" data-projectid="medialab"><span class="antiqua">(4)</span> MCC MediaLab websites</a>
-						<a class="project" data-projectid="creationofadam"><span class="antiqua">(5)</span> creation of Adam</a>
-						<a class="project" data-projectid="creativecode"><span class="antiqua">&gt;</span> creative coding featurettes</a>
-						<!-- <a class="project" data-projectid="dighum"><span class="antiqua">&gt;</span> digital humanities featurettes</a> -->
+						<a class="project" data-projectid="npr"><span class="antiqua">(2)</span> NPR design tokens</a>
+						<a class="project" data-projectid="hrdiagram"><span class="antiqua">(3)</span> a star's life</a>
+						<a class="project" data-projectid="medialab"><span class="antiqua">(4)</span> NYU MediaLab websites</a>
+						<a class="project" data-projectid="deutscheshaus"><span class="antiqua">(5)</span> digital event strategies</a>
+						<a class="project" data-projectid="creativecode"><span class="antiqua">&gt;</span> more interactive experiences</a>
 
-
-						<!-- <a class="project" data-projectid="rijks" href="rijks"><span class="antiqua">(3)</span> rijksmuseum artist inspirations</a>
-						<a class="project" data-projectid="sao" href="observatory"><span class="antiqua">(4)</span> southern Russia observatory experience</a>
-						<a class="project" data-projectid="bike" href="bike"><span class="antiqua">(5)</span> bike through Berlin</a>
-						<a class="project" data-projectid="piano" href="spacepiano"><span class="antiqua">(6)</span> sound of Space</a>
-						<a class="project" data-projectid="grandb" href="grandbudapest"><span class="antiqua">(7)</span> grand budapest</a>
-						<a class="project" href="manifesto" data-projectid="manifesto"><span class="antiqua">(1)</span> data manifesto</a>
-						<a class="project" href="rfe" data-projectid="rfe"><span class="antiqua">(2)</span> Radio Free Europe: politics infographics</a> -->
-					<!-- </div> -->
 				</div>
 
-			<!-- </section> -->
 
 			<div class="scroll">
 				<div class="innerscroll">
@@ -75,6 +63,16 @@
 						</div>
 					</div>
 
+					<div class="projectscroll" id="npr">
+						<div class="mockuppic"><a href="npr"><img src="projects/npr_iconsandpalette.png" alt="NPR design tokens graphic"></a></div>
+						<img src="projects/npr_colorwheel.png" class="prjsmallimage" alt="design tokens color wheel" width="300" height="auto">
+
+						<div class="projecttext">
+							<p>a 6-month research into the capabilities of design tokens and an implementation on npr.org.</p>
+							<a href="npr">learn more &gt;</a>
+						</div>
+					</div>
+
 					<div class="projectscroll" id="hrdiagram">
 						<div class="mockuppic"><a href="hrdiagram"><img src="projects/starslife_screen.png" alt="star's life project mockup"></a></div>
 						<img src="projects/piano3.png" class="prjsmallimage" alt="star" width="300" height="auto">
@@ -85,34 +83,25 @@
 						</div>
 					</div>
 
-					<div class="projectscroll" id="augmentation">
-						<div class="mockuppic"><a href="augmentation"><img src="projects/museumspace.png" alt="thesis thumbnail image"></a></div>
-						<img src="projects/constellation3.png" class="prjsmallimage" alt="constellation" width="300" height="auto">
-
-						<div class="projecttext">
-							<p>a visual culmination of a year-long research on augmented collections, contexts, juxtapositions, and cinematic montages –
-								all within the virtual realms of Rembrandt's "Night Watch".</p>
-							<a href="augmentation">learn more &gt;</a>
-						</div>
-					</div>
-
 					<div class="projectscroll" id="medialab">
 						<div class="mockuppic"><a href="medialab"><img src="projects/medialab_screen.png" alt="mcc medialab archive mockup"></a></div>
 						<img src="projects/logo.png" class="prjsmallimage" id="lablogo" alt="mcc medialab logo" width="300" height="auto">
 
 						<div class="projecttext">
-							<p>webpages I have designed, prototyped, developed and/or maintained as a lead web developer of the MediaLab Team at the department of Media, Culture, and Communications at NYU.</p>
+							<p>webpages I have designed, prototyped, developed and/or maintained as a lead web developer of the MediaLab Team at NYU.</p>
 							<a href="medialab">learn more &gt;</a>
 						</div>
 					</div>
 
-					<div class="projectscroll" id="creationofadam">
-						<div class="mockuppic"><a href="creationofadam"><img src="projects/adam_screen.png" alt="creation of adam AR app mockup"></a></div>
-						<img src="projects/adam.jpg" class="prjsmallimage" alt="creation of adam" width="300" height="auto">
+					<div class="projectscroll" id="deutscheshaus">
+						<div class="mockuppic"><a href="deutscheshaus"><img src="projects/dh_screen.png" alt="deutsches haus script and illustration graphic"></a></div>
+						<!-- <img src="projects/constellation3.png" class="prjsmallimage" alt="constellation" width="300" height="auto"> -->
 
 						<div class="projecttext">
-							<p>an Augmented Reality app built with Unity.</p>
-							<a href="creationofadam">learn more &gt;</a>
+							<p>some of the graphic design and Java coding work I have done to support event organization 
+								at Deutsches Haus at NYU.
+							</p>
+							<a href="deutscheshaus">learn more &gt;</a>
 						</div>
 					</div>
 
@@ -126,24 +115,10 @@
 						<img src="projects/piano2.png" class="featuretteimg" id="rotatestar" alt="rotating star">
 
 						<div class="projecttext">
-							<p>sketches, games, animations, and other experiences made with Processing and p5.js.</p>
+							<p>design research, sketches, games, animations, apps, and other experiences.</p>
 							<a href="creativecode">learn more &gt;</a>
 						</div>
 					</div>
-
-					<div id="bottomimg">
-						<img src="projects/frog.png" alt="Hello to the frog hiring team :)">
-					</div>
-
-					<!-- <div class="projectscroll" id="dighum">
-						<div class="mockuppic"><img src="projects/harlem.png" alt="mcc medialab archive mockup"></div>
-
-						<div class="projecttext">
-							<p></p>
-							<a href="#">learn more &gt;</a>
-						</div>
-					</div> -->
-
 
 				</div>
 			</div>

@@ -11,7 +11,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <title>sasha solovyeva</title>
-	<link rel="stylesheet" type="text/css" href="../projects.css">
+	<link rel="stylesheet" type="text/css" href="../css/projects.css">
 </head>
 
 <body>
@@ -29,22 +29,13 @@
 						 <span class="downarrow headingdown">&gt;</span> <a>bike through Berlin</a>
 					 </div>
 					 <div class="hiddenprojectlist projectlist">
-						 <a href="../mashup" class="project">mash up like the masters</a>
-						 <a href="../hrdiagram" class="project">a star's life</a>
-						 <a href="../augmentation" class="project">virtual museum: an honors thesis</a>
-						 <a href="../medialab" class="project">MCC MediaLab websites</a>
-						 <a href="../creationofadam" class="project">creation of Adam</a>
-
-						 <hr>
-
-						 <a href="../creativecode" class="project bold">creative coding featurettes:</a>
-						 <a href="../spacepiano" class="project">sound of Space</a>
-						 <a href="../rijks" class="project">rijksmuseum artist inspirations</a>
-						 <a href="../observatory" class="project">southern Russia observatory experience</a>
-						 <a href="../bike" class="project">bike through Berlin</a>
-						 <a href="../grandbudapest" class="project">grand budapest</a>
-
-					</div>
+		 				<a href="../mashup" class="project">mash up like the masters</a>
+		 				<a href="../npr" class="project">NPR design tokens</a>
+		 				<a href="../hrdiagram" class="project">a star's life</a>
+		 				<a href="../medialab" class="project">MCC MediaLab websites</a>
+		 				<a href="../deutscheshaus" class="project">digital event strategies</a>
+		 				<a href="../creativecode" class="project">interactive experiences</a>
+		 		   </div>
       </div>
     </div>
 
@@ -66,18 +57,61 @@
 
       </div>
 
+      <!-- SIMILAR PROJECTS -->
+      <hr>
+      <span class="smallerh">Similar projects</span>
+      <div class="multipleprojectscontainer similarprojects">
+
+        <div class="projectcontainer">
+          <div id="soundofspace">
+            <img src="../projects/piano_main.png" class="featuretteimg" id="piano" alt="rotating star">
+            <img src="../projects/piano2.png" class="featuretteimg" id="rotatestar" alt="rotating star">
+          </div>
+          <div>
+            <span class="smallerh black">sound of Space</span>
+            <p>
+              a piano-playing application, an associative astrophysics learning tool, a synesthesic fantasy – all in one Processing sketch
+              <a href="../spacepiano">learn more &gt;</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="projectcontainer">
+          <div>
+            <img src="../projects/adam.jpg" class="featuretteimg" alt="creation of adam project iphone mockup">
+          </div>
+          <div>
+            <span class="smallerh black">creation of Adam</span>
+            <p>
+            an Augmented Reality iPhone app built with Unity
+            <a href="../creationofadam">learn more &gt;</a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+		<hr>
+
+		<footer>
+			<div class="text">
+				<p>
+			Like this project? Want to collaborate? Want to tell me about a hilarious bug you've found? <br>
+					Contact me: <br>
+					<a href="mailto:asolovyeva@nyu.edu">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="magenta" d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+					</a>
+					<a href="https://www.linkedin.com/in/sashasolovyeva" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="magenta" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+					</a>
+				</p>
+			</div>
+		</footer>
+
     </div>
   </div>
 
-  <script>
-    let headingClick = document.querySelector('.heading')
-		headingClick.onclick = function(event){
-      headingClick.nextElementSibling.classList.toggle('hiddenprojectlist')
-			headingClick.classList.toggle('periwinkle')
-			headingClick.children[0].classList.toggle('headingdown')
-			headingClick.children[0].classList.toggle('headingup')
-    }
-  </script>
+  <script type="text/javascript" src="../scripts/navdropdown.js"></script>
 
 </body>
 </html>

@@ -60,7 +60,7 @@ section {
 	width: 50%;
 	height: 50vh;
 	border: solid 2px;
-	padding: 1.5% 2.5%;
+	padding: 1.8% 3.4%;
 	overflow: hidden;
 	position: relative;
 }
@@ -101,4 +101,8 @@ section a:hover {
 	bottom: -1%;
 	padding: 0;
 	width: 30%;
+}
+
+.smallfont {
+	font-size: 3.2vh;
 }

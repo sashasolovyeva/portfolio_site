@@ -11,7 +11,7 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="theme-color" content="#ffffff">
 <title>sasha solovyeva</title>
-	<link rel="stylesheet" type="text/css" href="../projects.css">
+	<link rel="stylesheet" type="text/css" href="../css/projects.css">
 </head>
 
 <body>
@@ -19,32 +19,23 @@
 		<div class="outerpageborder">
     </div>
     <div class="topnames">
-      <div class="lefttop">
-			     <a href="../index.html" class="name">sasha solovyeva</a>
-           <a href="../index.html" class="link" id="homelink">&lt;home/&gt;</a>
-      </div>
+		<div class="lefttop">
+			<a href="../index.html" class="name">sasha solovyeva</a>
+			<a href="../index.html" class="link" id="homelink">&lt;home/&gt;</a>
+		</div>
 
-			<div class="otherprojectlinks">
-			     <div class="heading">
-						 <span class="downarrow headingdown">&gt;</span> <a>creative coding featurettes</a>
-					 </div>
-					 <div class="hiddenprojectlist projectlist">
-						 <a href="../mashup" class="project">mash up like the masters</a>
-						 <a href="../hrdiagram" class="project">a star's life</a>
-						 <a href="../augmentation" class="project">virtual museum: an honors thesis</a>
-						 <a href="../medialab" class="project">MCC MediaLab websites</a>
-						 <a href="../creationofadam" class="project">creation of Adam</a>
-
-						 <hr>
-
-						 <a href="../creativecode" class="project bold">creative coding featurettes:</a>
-						 <a href="../spacepiano" class="project">sound of Space</a>
-						 <a href="../rijks" class="project">rijksmuseum artist inspirations</a>
-						 <a href="../observatory" class="project">southern Russia observatory experience</a>
-						 <a href="../bike" class="project">bike through Berlin</a>
-						 <a href="../grandbudapest" class="project">grand budapest</a>
-
-					</div>
+		<div class="otherprojectlinks">
+			<div class="heading">
+				<span class="downarrow headingdown">&gt;</span> <a>interactive experiences</a>
+			</div>
+			<div class="hiddenprojectlist projectlist">
+				<a href="../mashup" class="project">mash up like the masters</a>
+				<a href="../npr" class="project">NPR design tokens</a>
+				<a href="../hrdiagram" class="project">a star's life</a>
+				<a href="../medialab" class="project">MCC MediaLab websites</a>
+				<a href="../deutscheshaus" class="project">digital event strategies</a>
+				<a href="../creativecode" class="project">interactive experiences</a>
+		   </div>
       </div>
     </div>
 
@@ -52,39 +43,69 @@
 
 			<div class="projectcontainer">
 				<div id="soundofspace">
-					<img src="../projects/piano_main.png" class="featuretteimg" alt="rotating star">
+					<img src="../projects/piano_main.png" class="featuretteimg" id="piano" alt="rotating star">
 					<img src="../projects/piano2.png" class="featuretteimg" id="rotatestar" alt="rotating star">
 				</div>
 				<div>
 					<span class="smallerh black">sound of Space</span>
 					<p>
-					a piano-playing application, an associative astrophysics learning tool, a synesthesic fantasy – all in one Processing sketch
-					<a href="../spacepiano">learn more &gt;</a>
+						a piano-playing application, an associative astrophysics learning tool, a synesthesic fantasy – all in one Processing sketch
+						<a href="../spacepiano">learn more &gt;</a>
 					</p>
 				</div>
 			</div>
 
-      <div class="projectcontainer">
+			<div class="projectcontainer">
+				<div id="augmentation">
+					<img src="../projects/museumspace.png" class="featuretteimg" alt="museum space thumbnail">
+				</div>
+				<div>
+					<span class="smallerh black">virtual museum: an honors thesis</span>
+					<p>
+						a visual culmination of a year-long research on museum digitalization –
+								through the perspective of Rembrandt's "Night Watch"
+						<a href="../augmentation">learn more &gt;</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="projectcontainer">
 				<div id="rijksthumbnail">
-					<img src="../projects/milkmaid.png" class="featuretteimg" id="milkmaid" alt="vermeer's milkmaid">
-					<img src="../projects/cursor.png" class="featuretteimg" id="cursor" alt="cursor">
+					<div>
+						<img src="../projects/milkmaid.png" class="featuretteimg" id="milkmaid" alt="vermeer's milkmaid">
+						<img src="../projects/cursor.png" class="featuretteimg" id="cursor" alt="cursor">
+					</div>
 				</div>
 				<div>
 					<span class="smallerh black">rijksmuseum artist inspirations</span>
 					<p>
-					an API-based inspiration search tool for creators that extracts color palettes of the Rijksmuseum's most famous masterpieces
-					<a href="../rijks">learn more &gt;</a>
+						an API-based inspiration search tool for creators that extracts color palettes of the Rijksmuseum's most famous masterpieces
+						<a href="../rijks">learn more &gt;</a>
 					</p>
 				</div>
 
-      </div>
+			</div>
+
+			<div class="projectcontainer">
+				<div>
+					<img src="../projects/adam.jpg" class="featuretteimg" alt="creation of adam project iphone mockup">
+				</div>
+				<div>
+					<span class="smallerh black">creation of Adam</span>
+					<p>
+					an Augmented Reality iPhone app built with Unity
+					<a href="../creationofadam">learn more &gt;</a>
+					</p>
+				</div>
+
+			</div>
 
 			<div class="projectcontainer">
 				<div>
 					<img src="../projects/sao.png" class="featuretteimg" id="sao" alt="observatory tower">
 				</div>
 				<div>
-					<span class="smallerh black">southern Russia observatory experience</span>
+					<span class="smallerh black">visit the observatory</span>
 					<p>
 					an AR motion detection experience that tells a story of life and scientific research in the Special Atrophysics Observatory of the Russian Academy of Science
 					<a href="../observatory">learn more &gt;</a>
@@ -121,15 +142,7 @@
     </div>
   </div>
 
-  <script>
-    let headingClick = document.querySelector('.heading')
-		headingClick.onclick = function(event){
-      headingClick.nextElementSibling.classList.toggle('hiddenprojectlist')
-			headingClick.classList.toggle('periwinkle')
-			headingClick.children[0].classList.toggle('headingdown')
-			headingClick.children[0].classList.toggle('headingup')
-    }
-  </script>
+  <script type="text/javascript" src="../scripts/navdropdown.js"></script>
 
 </body>
 </html>

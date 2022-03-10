@@ -1,37 +1,30 @@
 @charset "UTF-8";
 
 body {
-  font-size: 3vh;
+  font-size: 2.8vh;
 }
 
 .heading {
-  font-size: 5vh;
-}
-
-.link {
-  position: static;
-  font-size: 3vh;
-  margin: 1vh 0;
-  display: block;
+  font-size: 4vh;
 }
 
 /* font size overrides */
 .antiqua {
-  font-size: 2.2vh;
+  font-size: 2.4vh;
 }
 
 .projectlist a {
-  font-size: 2.2vh;
+  font-size: 2.4vh;
 }
 
 .projectscroll .projecttext {
-  font-size: 2.2vh;
+  font-size: 2.4vh;
   width: 100%;
   text-align: center;
 }
 
 .smallfont {
-  font-size: 2.2vh;
+  font-size: 2.4vh;
 }
 
 /* project list override */
@@ -89,8 +82,8 @@ body {
 }
 
 .klepa {
-  width: 50%;
-  max-width: 60%;
+  width: 40%;
+  max-width: 50%;
 }
 
 @media only screen and (orientation: landscape){

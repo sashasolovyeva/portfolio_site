@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>sasha solovyeva</title>
+	<link rel="stylesheet" type="text/css" href="../css/projects.css">
+</head>
+
+<body>
+	<div class="main">
+    <div class="outerpageborder">
+    </div>
+    <div class="topnames">
+      <div class="lefttop">
+			     <a href="../" class="name">sasha solovyeva</a>
+           <a href="../" class="link" id="homelink">&lt;home/&gt;</a>
+      </div>
+
+			<div class="otherprojectlinks">
+			     <div class="heading">
+						 <span class="downarrow headingdown">&gt;</span> <a>NPR design tokens</a>
+					 </div>
+					 <div class="hiddenprojectlist projectlist">
+		 				<a href="../mashup" class="project">mash up like the masters</a>
+		 				<a href="../npr" class="project">NPR design tokens</a>
+		 				<a href="../hrdiagram" class="project">a star's life</a>
+		 				<a href="../medialab" class="project">MCC MediaLab websites</a>
+		 				<a href="../deutscheshaus" class="project">digital event strategies</a>
+		 				<a href="../creativecode" class="project">interactive experiences</a>
+		 		   </div>
+      </div>
+    </div>
+
+    <div class="projectcontainer">
+			<div class="text">
+				<span>&lt;workflow id="<span class="ps">figma</span> <span class="js">node.js</span> <span class="js">style-dictionary</span> <span class="js">git</span>" date="oct2021-apr2022"/&gt;</span>
+			</div>
+
+			<div class="text">
+				<p>
+					The main project of my internship at National Public Radio as a part of the design operations team was a research into the possibilities of design tokens
+					to simplify the handover of SVG icons from designers to developers.
+					Establishing a new wokflow meant working around a complex architecture of the NPR's web assets, re-organizing how SVG icons are stored on the server,
+					and developing a new design system for web icons and their colors.
+					<br>
+					This project is currently in progress and documentation is being constantly updated!
+				</p>
+
+			</div>
+
+			<img src="../projects/npr_iconsandpalette.png" alt="design tokens graphic">
+			<a class="extlink" href="https://github.com/npr/design-tokens" target="_blank">see on github &gt;</a>
+
+			<div class="text">
+					<h4>First things first: what are the design tokens?</h4>
+					<ul>
+						<li>A system to cascade styles defined in one document (i.e., a Figma doc) down to all platforms with one (or maybe, 2-3…) clicks.</li>
+
+						<li>Allows to organize a robust system in one place and integrate on different platforms using the same process and logic.</li>
+
+						<li>Can help codify: colors, typography, grids, sizes, spacing, padding, media queries, radii, borders, and icons.</li>
+					</ul>
+
+					<h4>Philosophy behind the design tokens</h4>
+					<p>
+						An often-overlooked part of modern product design is the efficiency of designer-to-dev or design system-to-final product pipelines.
+						With an increased attention towards user-facing design (which is undoubtedly super important!), many teams sacrifice designing a better
+						process of the handover of design assets and interfaces. This is where design tokens can come into play, allowing a
+						designer, upon completion of their edits, automatically send them into Git and cascade them all the way into a mobile or web app
+						with a few automatization tools.
+					</p>
+
+					<h4>Why design tokens are super useful for a big org (like NPR)</h4>
+					<ul>
+						<li>They bridge the gap between designers and developers, since the usage of the workflow doesn't require coding knowledge
+							(accessibility of tech tools is important on all levels).
+						</li>
+						<li>They help to avoid any need for communicating with developers (unless you want to!)</li>
+						<li>Since Style Dictionary can parse tokens for as many different platforms as needed,
+							they open up potential for a single-source, easy-to-update design system
+							(this part didn't at all make it into the MVP. One day!..)
+						</li>
+						<li>
+							Many ways to organize styles and many use-cases (more on that below!)
+						</li>
+					</ul>
+
+					<h4>SVG icons use-case</h4>
+
+					<p>
+						Originally, I was exploring design tokens for the mobile version NPR's listening service <a href="https://one.npr.org/" target="_blank">NPR One</a>.
+						However, when the web team for <a href="https://www.npr.org/">npr.org</a> had run into an issue of a disorganized
+						directory of SVG icons (many duplicates, inconsistent sizing and coloring, etc.), I realized that design tokens
+						would be very well-fitted to solve it. <br>
+						I figured out a system of storing SVG icons separately from their colors,
+						and using a plugin <a href="https://www.figma.com/community/plugin/1012112455906916204/DSync">DSync</a> (credit to Liza Svitanko),
+						built a system of packaging the SVG code and color information together.
+					</p>
+
+					<h4>Auxiliary work</h4>
+
+					<p>
+						In order to figure out the most effieicent structure of structuing SVGs, I partnered up with developers on the web team
+						to conduct a comprehensive audit of existing icons and track where they are stored, the logic behind
+						color variations, and calls from externals servers.
+					</p>
+
+					<img src="audit_screenshot.png" alt="screenshot of a Google sheet with the SVG icons audit">
+
+					<p>Since the project is in progress, this page will be updated on the regular basis.</p>
+			</div>
+
+			<!-- SIMILAR PROJECTS -->
+			<hr>
+			<span class="smallerh">Similar projects</span>
+			<div class="multipleprojectscontainer similarprojects">
+
+
+				<div class="projectcontainer">
+					<div>
+						<img src="../projects/medialab_screen.png" class="featuretteimg" alt="medialab screen">
+					</div>
+
+					<div>
+						<span class="smallerh black">NYU MediaLab</span>
+						<p>
+							webpages I have designed, prototyped, developed and/or maintained as a lead web developer of the MediaLab Team at NYU
+							<a href="../medialab">learn more &gt;</a>
+						</p>
+					</div>
+
+				</div>
+
+				<div class="projectcontainer">
+					<div>
+						<img src="../projects/dh_screen.png" class="featuretteimg" alt="deutsches haus screen">
+					</div>
+
+					<div>
+						<span class="smallerh black">digital event strategies</span>
+						<p>
+							some of the graphic design and Java coding work I have done to support event organization
+									at Deutsches Haus at NYU
+							<a href="../deutscheshaus">learn more &gt;</a>
+						</p>
+					</div>
+
+				</div>
+			</div>
+			<hr>
+
+			<footer>
+				<div class="text">
+					<p>
+				Like this project? Want to collaborate? Want to tell me about a hilarious bug you've found? <br>
+						Contact me: <br>
+						<a href="mailto:asolovyeva@nyu.edu">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="magenta" d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+						</a>
+						<a href="https://www.linkedin.com/in/sashasolovyeva" target="_blank">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="magenta" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+						</a>
+					</p>
+				</div>
+			</footer>
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="../scripts/navdropdown.js"></script>
+
+</body>
+</html>

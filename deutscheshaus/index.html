@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<title>sasha solovyeva</title>
+	<link rel="stylesheet" type="text/css" href="../css/projects.css">
+</head>
+
+<body>
+	<div class="main">
+    <div class="outerpageborder">
+    </div>
+    <div class="topnames">
+      <div class="lefttop">
+			<a href="../" class="name">sasha solovyeva</a>
+           	<a href="../" class="link" id="homelink">&lt;home/&gt;</a>
+      </div>
+
+			<div class="otherprojectlinks">
+			     <div class="heading">
+						 <span class="downarrow headingdown">&gt;</span> <a>digital event strategies</a>
+					 </div>
+					 <div class="hiddenprojectlist projectlist">
+		 				<a href="../mashup" class="project">mash up like the masters</a>
+		 				<a href="../npr" class="project">NPR design tokens</a>
+		 				<a href="../hrdiagram" class="project">a star's life</a>
+		 				<a href="../medialab" class="project">MCC MediaLab websites</a>
+		 				<a href="../deutscheshaus" class="project">digital event strategies</a>
+		 				<a href="../creativecode" class="project">interactive experiences</a>
+		 		   </div>
+      </div>
+    </div>
+
+    <div class="projectcontainer">
+			<div class="text">
+				<p>
+					As a part of my role as a project assistant at Deutsches Haus at NYU,
+					I oversaw strategy in event planning and optimized processes at all of its phases
+					from communications with speakers to promotion to post-even management.
+					That included building efficient workflows for obtaining speaker information and paying them
+					for their services, re-imagining and simplifying visual design of promotional assets, and
+					writing code to automate some processes.
+				</p>
+				<a href="#flyercontainer"><span class="downarrow headingdown">&gt;</span> jump to the visual design work with flyers</a>
+			</div>
+
+			<div class="text">
+				<span class="smallerh">Subtitle Editor script</span><br><br>
+				<span>&lt;code id="<span class="js">java</span> <span class="js">regex</span>" date="jan2022"/&gt;</span>
+			</div>
+
+			<img src="subtitlescript.png" alt="screenshot of SubtitlesParse.java">
+			<a class="extlink" href="https://github.com/sashasolovyeva/SubtitleEditor" target="_blank">see on github &gt;</a>
+
+			<div class="text">
+					<p>
+						This code is intended to automatically fix some of the grammar, spelling, and capitalization
+						errors that the YouTube algorithm makes when automatically transcribing videos. The script relies
+						on Java I/O and RegEx string replacement. <br>
+						Word replacement happens on the basis of a custom dictionary a person editing subtitles defines.
+						Therefore, after the script is run, some corrections still need to be done manually.
+						In total, thanks to this project, the process of transcription of event recordings was shortened by 60%, i.e.,
+						to twice the time of a video's length (as opposed to 5x time).<br>
+					</p>
+
+					<h4>Structure of input</h4>
+					<ul>
+						<li>SubtitlesParse.java</li>
+						<li>captions.vtt (the .vtt format is a must!) that should be downloaded from YouTube Studio
+							(automat generated captions)
+						</li>
+					</ul>
+
+					<h4>Structure of the dictionary</h4>
+					<p>.replace(“WORD_TO_REPLACE”, “REPLACEMENT_WORD”)</p>
+					<ul>
+						<li>GENERAL CORRECTIONS
+							<ul>
+								<li>Grammar</li>
+								<li>Academia terms</li>
+								<li>Deutsches Haus-specific</li>
+								<li>Deutsches Haus-specific names (aka names of the employees that come up in videos)</li>
+								<li>Relevant geographic locations</li>
+								<li>Month names</li>
+							</ul>
+						</li>
+						<li>VIDEO-SPECIFIC – should be deleted when starting a new video to avoid the clutter in the code.
+							 It is also recommended to separate this into categories.</li>
+					</ul>
+
+					<h4>Room for growth</h4>
+					<p>In the future, I am hoping to build a node.js and React app that provides a UI to create a custom
+						dictionary, and then automatically run the script on automatically-generated YouTube captions without having
+						to download them.<br>
+						It would also be amazing to one day connect the script to an NLP API that would fix common typos and
+						capitalize words automatically.
+					</p>
+			</div>
+
+    </div>
+
+	<div class="projectcontainer" id="flyercontainer">
+		<div class="text">
+			<span class="smallerh">Flyer redesign</span><br><br>
+			<span>&lt;visualDesign id="<span class="ps">figma</span> <span class="gd">illustration</span>" date="oct2021"/&gt;</span>
+			<p>
+				To increase the engagement with Deutsches Haus events, it was important to create cohesion in
+				the look and feel of our promotional materials. As a designer, my main objective was to
+				craft a visually compelling flyer while following existing brand standards
+				and keeping the long-form promotional text readable.
+			</p>
+		</div>
+
+		<img src="flyers/flyer_final1.png" alt="final version of the flyer redesign" class="dhonepic">
+
+		<div class="text">
+			<h4>The Process</h4>
+			<h4>The original version</h4>
+			<img src="flyers/flyer_original.png" alt="original flyer version" class="dhonepic">
+			<p>Issues:</p>
+			<ul>
+				<li>Unbalanced (much heavier on top)</li>
+				<li>A lot of white space between paragraphs</li>
+				<li>Not print-friendly</li>
+			</ul>
+		</div>
+
+		<div class="text">
+			<h4>First drafts</h4>
+			<div class="dhthreepics">
+				<img src="flyers/flyer_draft1.1.png" alt="first flyer draft">
+				<img src="flyers/flyer_draft1.2.png" alt="first flyer draft">
+				<img src="flyers/flyer_draft1.3.png" alt="first flyer draft">
+			</div>
+			<p>Idea basis:</p>
+			<ul>
+				<li>New York City skyline to signify the Deutsches Haus's connection to the city</li>
+				<li>Perspective grid for a 3D effect of a "cityscape"</li>
+				<li>Different shapes depending on the image direction (a "rising sun" half-circle shape was proposed for
+					horizontal images).
+				</li>
+				<li>The Neue Haas Unica type was chosen because it is an easy-to-read sans-serif that is similar to Deutsches Haus's
+					base font (Gotham) while having a distinct personality (elongated and thin) matching the rest of the flyer's visuals.
+				</li>
+				<li>Two-column text allows to take advantage of the horizontal space and to wrap text around logos at the bottom.</li>
+			</ul>
+		</div>
+
+		<div class="text">
+			<h4>Second drafts</h4>
+			<div class="dhthreepics">
+				<img src="flyers/flyer_draft2.1.png" alt="second flyer draft">
+				<img src="flyers/flyer_draft2.2.png" alt="second flyer draft">
+				<img src="flyers/flyer_draft2.3.png" alt="second flyer draft">
+			</div>
+			<p>Idea basis:</p>
+			<p>The team liked the "connection to NYC" concept behind the first draft
+				but wanted a more personalized look to illustrate that. Because of that, I decided to experiment
+				with digital illustration to depict the Deutsches Haus's iconic windows, arch,
+				and the "University Place" street sign.
+			</p>
+		</div>
+
+		<div class="text">
+
+			<h4>Final version</h4>
+			<div class="dhthreepics">
+				<img src="flyers/flyer_final1.png" alt="final version of the flyer redesign">
+				<img src="flyers/flyer_final2.png" alt="final version of the flyer redesign">
+				<img src="flyers/flyer_final3.png" alt="final version of the flyer redesign">
+			</div>
+			<p>Idea basis:</p>
+			<ul>
+				<li>The final iteration relied on the request to maintain illustrations of Deutsches Haus's elements
+					but declutter and simplify the imagery.
+				</li>
+				<li>Black-and-whote illustration helped to divert attention from random parts of a flyer to
+					an event-specific image in the top left.
+				</li>
+				<li>
+					The simplified visuals also allowed for multiple flyers to not blend in with one another when
+					hung up together.
+				</li>
+				<li>
+					The updated positions of flyer elements (event image, title, QR code, illustrations, etc.) allowed
+					for easy adjustments for any event (e.g., with a horizontal image, longer text, no QR code, etc.)
+				</li>
+			</ul>
+
+		</div>
+
+		<!-- SIMILAR PROJECTS -->
+		<hr>
+		<span class="smallerh">Similar projects</span>
+		<div class="multipleprojectscontainer similarprojects">
+
+
+			<div class="projectcontainer">
+				<div>
+					<img src="../projects/npr_iconsandpalette.png" class="featuretteimg" alt="npr screen">
+				</div>
+				<div>
+					<span class="smallerh black">NPR design tokens</span>
+					<p>
+						6-month research into the capabilities of design tokens and an implementation on npr.org
+						<a href="../npr">learn more &gt;</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="projectcontainer">
+				<div>
+					<img src="../projects/medialab_screen.png" class="featuretteimg" alt="medialab screen">
+				</div>
+
+				<div>
+					<span class="smallerh black">NYU MediaLab</span>
+					<p>
+						webpages I have designed, prototyped, developed and/or maintained as a lead web developer of the MediaLab Team at NYU
+						<a href="../medialab">learn more &gt;</a>
+					</p>
+				</div>
+
+			</div>
+		</div>
+		<hr>
+
+		<footer>
+			<div class="text">
+				<p>
+			Like this project? Want to collaborate? Want to tell me about a hilarious bug you've found? <br>
+					Contact me: <br>
+					<a href="mailto:asolovyeva@nyu.edu">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="magenta" d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+					</a>
+					<a href="https://www.linkedin.com/in/sashasolovyeva" target="_blank">
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="magenta" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+					</a>
+				</p>
+			</div>
+		</footer>
+
+	</div>
+
+  </div>
+
+  <script type="text/javascript" src="../scripts/navdropdown.js"></script>
+
+</body>
+</html>
